@@ -28,6 +28,8 @@ class EditBookingApi(APIView):
         booking = Booking.objects.get(date=datebooking)
         bserializer = BookingSerializer(booking, data=request.data, partial=True)
         if bserializer.is_valid():
+            if datebooking != request.data.get('date', datebooking):
+                return Response({'success': False, 'message': 'Can\'t change booking date'}, status=status.HTTP_400_BAD_REQUEST)
             bserializer.save()
             return Response(bserializer.data, status=status.HTTP_200_OK)
         return Response(bserializer.errors, status=status.HTTP_400_BAD_REQUEST)
@@ -55,6 +57,8 @@ class EditPriceApi(APIView):
         price = Price.objects.get(booking__date=datebooking)
         pserializer = PriceSerializer(price, data=request.data, partial=True)
         if pserializer.is_valid():
+            if datebooking != request.data.get('booking'):
+                return Response({'success': False, 'message': 'Can\'t change booking date'}, status=status.HTTP_400_BAD_REQUEST)
             pserializer.save()
             return Response(pserializer.data, status=status.HTTP_200_OK)
         return Response(pserializer.errors, status=status.HTTP_400_BAD_REQUEST)

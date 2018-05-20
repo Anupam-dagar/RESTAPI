@@ -3,8 +3,8 @@ from .models import Booking, Price
 
 class BookingSerializer(serializers.ModelSerializer):
     def validate(self, data):
-        singleroomaval = data.get('singleroomaval')
-        doubleroomaval = data.get('doubleroomaval')
+        singleroomaval = data.get('singleroomaval', True)
+        doubleroomaval = data.get('doubleroomaval', True)
         if singleroomaval > 5 or singleroomaval < 0 or doubleroomaval > 5 or doubleroomaval < 0:
             raise serializers.ValidationError('Room availability must be between 0 or 5')
         return data

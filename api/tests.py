@@ -90,6 +90,13 @@ class BookingApiTestCase(TestCase):
             'singleroomaval': 4,
             'doubleroomaval': 2
         }
+        self.partialupdate_edit_payload = {
+            'singleroomaval': 1,
+        }
+        self.nonexist_date_invalid_edit_payload = {
+            'date': '2018-05-18',
+            'singleroomaval': 4
+        }
 
     def test_get_single_booking(self):
         response = client.get(reverse('GetBooking', kwargs={
@@ -194,7 +201,7 @@ class BookingApiTestCase(TestCase):
         }
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual(response.data, response_dict)
-        
+
     def test_single_aval_neg_invalid_edit_payload(self):
         response = client.post(reverse('UpdateBooking', kwargs={
                                'datebooking': '2018-05-20'}), data=self.single_aval_neg_invalid_edit_payload)
@@ -239,6 +246,19 @@ class BookingApiTestCase(TestCase):
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual(response.data, response_dict)
 
+    def test_partialupdate_edit_payload(self):
+        response = client.post(reverse('UpdateBooking', kwargs={
+                               'datebooking': '2018-05-20'}), data=self.partialupdate_edit_payload)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_nonexist_date_invalid_edit_payload(self):
+        response = client.post(reverse('UpdateBooking', kwargs={
+                               'datebooking': '2018-05-20'}), data=self.nonexist_date_invalid_edit_payload)
+        response_dict = {
+            'message': "Can't change booking date", 'success': False
+        }
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(response.data, response_dict)
 
 class PriceApiTestCase(TestCase):
     def setUp(self):
@@ -273,6 +293,21 @@ class PriceApiTestCase(TestCase):
             'pricesingle': 1000,
             'pricedouble': 1500
         }
+        self.pricesingle_invalid_edit_payload = {
+            'booking': '2018-05-20',
+            'pricesingle': -1,
+            'pricedouble': 1500
+        }
+        self.pricedouble_invalid_edit_payload = {
+            'booking': '2018-05-20',
+            'pricesingle': 1000,
+            'pricedouble': -1
+        }
+        self.exist_booking_invalid_edit_payload = {
+            'booking': '2018-05-19',
+            'pricesingle': 1000,
+            'pricedouble': 1500
+        }
 
     def test_get_single_price(self):
         response = client.get(
@@ -302,4 +337,20 @@ class PriceApiTestCase(TestCase):
     def test_exist_booking_invalid_payload(self):
         response = client.post(reverse('CreatePricing'),
                                data=self.exist_booking_invalid_payload)
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+    def test_pricesingle_invalid_edit_payload(self):
+        response = client.post(reverse('UpdatePrice', kwargs={
+                               'datebooking': '2018-05-20'}), data=self.pricesingle_invalid_edit_payload)
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+    def test_pricedouble_invalid_edit_payload(self):
+        response = client.post(reverse('UpdatePrice', kwargs={
+                               'datebooking': '2018-05-20'}), data=self.pricedouble_invalid_edit_payload)
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+    
+    def test_exist_booking_invalid_edit_payload(self):
+        response = client.post(reverse('UpdatePrice', kwargs={
+                               'datebooking': '2018-05-20'}), data=self.exist_booking_invalid_edit_payload)
+        import pdb; pdb.set_trace()
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
