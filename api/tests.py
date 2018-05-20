@@ -4,6 +4,7 @@ from rest_framework.test import APIRequestFactory
 from rest_framework import status
 from django.core.urlresolvers import reverse
 import json
+from concurrency.exceptions import RecordModifiedError
 client = Client()
 
 
@@ -427,32 +428,59 @@ class BulkOperationTest(TestCase):
         response = client.put(reverse('BulkOperation'), data=json.dumps(
             self.double_valid_payload), content_type='application/json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+
     def test_single_valid_payload(self):
         response = client.put(reverse('BulkOperation'), data=json.dumps(
             self.single_valid_payload), content_type='application/json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-    
+
     def test_from_date_invalid_payload(self):
         response = client.put(reverse('BulkOperation'), data=json.dumps(
             self.from_date_invalid_payload), content_type='application/json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-    
+
     def test_to_date_invalid_payload(self):
         response = client.put(reverse('BulkOperation'), data=json.dumps(
             self.to_date_invalid_payload), content_type='application/json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-    
+
     def test_price_invalid_payload(self):
         response = client.put(reverse('BulkOperation'), data=json.dumps(
             self.price_invalid_payload), content_type='application/json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-    
+
     def test_aval_invalid_payload(self):
         response = client.put(reverse('BulkOperation'), data=json.dumps(
             self.aval_invalid_payload), content_type='application/json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-    
+
     def test_aval_neg_invalid_payload(self):
         response = client.put(reverse('BulkOperation'), data=json.dumps(
             self.aval_neg_invalid_payload), content_type='application/json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+
+class ConcurrencyTest(TestCase):
+    def setUp(self):
+        self.booking = Booking.objects.create(
+            date='2018-05-20', singleroomaval=2, doubleroomaval=3)
+        Price.objects.create(booking=self.booking,
+                             pricesingle=800, pricedouble=900)
+
+    def test_concurrency_booking(self):
+        user_one = Booking.objects.get(date='2018-05-20')
+        user_one.singleroomaval = 1
+        user_two = Booking.objects.get(date='2018-05-20')
+        user_two.singleroomaval = 4
+
+        user_one.save()
+        self.assertRaises(RecordModifiedError, user_two.save)
+
+    def test_concurrency_price(self):
+        user_one = Price.objects.get(booking=self.booking)
+        user_one.pricesingle = 400
+        user_two = Price.objects.get(booking=self.booking)
+        user_two.pricesingle = 200
+
+        user_one.save()
+        self.assertRaises(RecordModifiedError, user_two.save)

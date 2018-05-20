@@ -1753,3 +1753,723 @@ BdbQuit
 
 2018-05-20 20:38:14,605 [INFO] BULK operation initiated.
 
+2018-05-20 20:54:50,017 [INFO] BULK operation initiated.
+
+2018-05-20 20:54:50,041 [INFO] Update request initiated.
+
+2018-05-20 20:54:50,043 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-20 20:54:50,049 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:54:50,051 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-20 20:54:50,053 [INFO] Update request initiated.
+
+2018-05-20 20:54:50,055 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:54:50,055 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:54:50,057 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:54:50,059 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:54:50,059 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:54:50,061 [INFO] Update request initiated.
+
+2018-05-20 20:54:50,063 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:54:50,064 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:54:50,066 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:54:50,067 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:54:50,068 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:54:50,069 [INFO] Update request initiated.
+
+2018-05-20 20:54:50,074 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 2}
+
+2018-05-20 20:54:50,076 [INFO] Update request initiated.
+
+2018-05-20 20:54:50,078 [ERROR] {'date': [ErrorDetail(string=u'booking with this date already exists.', code=u'unique')]}
+
+2018-05-20 20:54:50,080 [INFO] Get request initiated.
+
+2018-05-20 20:54:50,082 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 2, 'doubleroomaval': 3}
+
+2018-05-20 20:54:50,083 [INFO] Update request initiated.
+
+2018-05-20 20:54:50,085 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-20 20:54:50,087 [INFO] Update request initiated.
+
+2018-05-20 20:54:50,090 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 3}
+
+2018-05-20 20:54:50,092 [INFO] Update request initiated.
+
+2018-05-20 20:54:50,094 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:54:50,094 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:54:50,096 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:54:50,098 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:54:50,098 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:54:50,101 [INFO] Update request initiated.
+
+2018-05-20 20:54:50,104 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:54:50,105 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:54:50,107 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:54:50,109 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:54:50,109 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:54:50,111 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:54:51,622 [INFO] Bulk operation succeeded.
+
+2018-05-20 20:54:52,922 [INFO] Bulk operation succeeded.
+
+2018-05-20 20:54:52,930 [INFO] Creating an entry for price table.
+
+2018-05-20 20:54:52,931 [ERROR] {'booking': [ErrorDetail(string=u"'12-05-2018' value has an invalid date format. It must be in YYYY-MM-DD format.", code=u'invalid')]}
+
+2018-05-20 20:54:52,934 [INFO] UPDATE request initiated.
+
+2018-05-20 20:54:52,937 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-20 20:54:52,939 [INFO] UPDATE request initiated.
+
+2018-05-20 20:54:52,942 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-20 20:54:52,944 [INFO] Creating an entry for price table.
+
+2018-05-20 20:54:52,946 [ERROR] {'booking': [ErrorDetail(string=u'price with this booking already exists.', code=u'unique')]}
+
+2018-05-20 20:54:52,949 [INFO] GET request initiated.
+
+2018-05-20 20:54:52,950 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 800, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-20 20:54:52,952 [INFO] UPDATE request initiated.
+
+2018-05-20 20:54:52,955 [ERROR] Invalid price entered.
+
+2018-05-20 20:54:52,955 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:54:52,957 [INFO] Creating an entry for price table.
+
+2018-05-20 20:54:52,960 [ERROR] Invalid price entered.
+
+2018-05-20 20:54:52,960 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:54:52,962 [INFO] UPDATE request initiated.
+
+2018-05-20 20:54:52,965 [ERROR] Invalid price entered.
+
+2018-05-20 20:54:52,965 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:54:52,968 [INFO] Creating an entry for price table.
+
+2018-05-20 20:54:52,970 [ERROR] Invalid price entered.
+
+2018-05-20 20:54:52,971 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:54:52,973 [INFO] Creating an entry for price table.
+
+2018-05-20 20:54:52,976 [INFO] Request completed
+Request Status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 1500, 'booking': datetime.date(2018, 5, 19)}
+
+2018-05-20 20:55:02,456 [INFO] BULK operation initiated.
+
+2018-05-20 20:55:02,471 [INFO] Update request initiated.
+
+2018-05-20 20:55:02,473 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-20 20:55:02,478 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:55:02,480 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-20 20:55:02,482 [INFO] Update request initiated.
+
+2018-05-20 20:55:02,484 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:55:02,485 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:55:02,487 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:55:02,489 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:55:02,489 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:55:02,491 [INFO] Update request initiated.
+
+2018-05-20 20:55:02,493 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:55:02,493 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:55:02,495 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:55:02,497 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:55:02,497 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:55:02,499 [INFO] Update request initiated.
+
+2018-05-20 20:55:02,503 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 2}
+
+2018-05-20 20:55:02,505 [INFO] Update request initiated.
+
+2018-05-20 20:55:02,507 [ERROR] {'date': [ErrorDetail(string=u'booking with this date already exists.', code=u'unique')]}
+
+2018-05-20 20:55:02,510 [INFO] Get request initiated.
+
+2018-05-20 20:55:02,511 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 2, 'doubleroomaval': 3}
+
+2018-05-20 20:55:02,513 [INFO] Update request initiated.
+
+2018-05-20 20:55:02,515 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-20 20:55:02,517 [INFO] Update request initiated.
+
+2018-05-20 20:55:02,520 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 3}
+
+2018-05-20 20:55:02,522 [INFO] Update request initiated.
+
+2018-05-20 20:55:02,524 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:55:02,524 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:55:02,526 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:55:02,528 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:55:02,528 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:55:02,530 [INFO] Update request initiated.
+
+2018-05-20 20:55:02,534 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:55:02,534 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:55:02,536 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:55:02,538 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:55:02,538 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:55:02,540 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:55:03,932 [INFO] Bulk operation succeeded.
+
+2018-05-20 20:55:05,232 [INFO] Bulk operation succeeded.
+
+2018-05-20 20:55:05,239 [INFO] Creating an entry for price table.
+
+2018-05-20 20:55:05,241 [ERROR] {'booking': [ErrorDetail(string=u"'12-05-2018' value has an invalid date format. It must be in YYYY-MM-DD format.", code=u'invalid')]}
+
+2018-05-20 20:55:05,243 [INFO] UPDATE request initiated.
+
+2018-05-20 20:55:05,246 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-20 20:55:05,248 [INFO] UPDATE request initiated.
+
+2018-05-20 20:55:05,251 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-20 20:55:05,253 [INFO] Creating an entry for price table.
+
+2018-05-20 20:55:05,256 [ERROR] {'booking': [ErrorDetail(string=u'price with this booking already exists.', code=u'unique')]}
+
+2018-05-20 20:55:05,258 [INFO] GET request initiated.
+
+2018-05-20 20:55:05,259 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 800, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-20 20:55:05,262 [INFO] UPDATE request initiated.
+
+2018-05-20 20:55:05,264 [ERROR] Invalid price entered.
+
+2018-05-20 20:55:05,265 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:55:05,267 [INFO] Creating an entry for price table.
+
+2018-05-20 20:55:05,269 [ERROR] Invalid price entered.
+
+2018-05-20 20:55:05,269 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:55:05,271 [INFO] UPDATE request initiated.
+
+2018-05-20 20:55:05,274 [ERROR] Invalid price entered.
+
+2018-05-20 20:55:05,274 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:55:05,277 [INFO] Creating an entry for price table.
+
+2018-05-20 20:55:05,279 [ERROR] Invalid price entered.
+
+2018-05-20 20:55:05,279 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:55:05,281 [INFO] Creating an entry for price table.
+
+2018-05-20 20:55:05,284 [INFO] Request completed
+Request Status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 1500, 'booking': datetime.date(2018, 5, 19)}
+
+2018-05-20 20:56:32,260 [INFO] BULK operation initiated.
+
+2018-05-20 20:56:32,275 [INFO] Update request initiated.
+
+2018-05-20 20:56:32,277 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-20 20:56:32,282 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:56:32,284 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-20 20:56:32,286 [INFO] Update request initiated.
+
+2018-05-20 20:56:32,288 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:56:32,288 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:56:32,290 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:56:32,292 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:56:32,292 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:56:32,294 [INFO] Update request initiated.
+
+2018-05-20 20:56:32,296 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:56:32,296 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:56:32,298 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:56:32,299 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:56:32,300 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:56:32,301 [INFO] Update request initiated.
+
+2018-05-20 20:56:32,305 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 2}
+
+2018-05-20 20:56:32,307 [INFO] Update request initiated.
+
+2018-05-20 20:56:32,309 [ERROR] {'date': [ErrorDetail(string=u'booking with this date already exists.', code=u'unique')]}
+
+2018-05-20 20:56:32,311 [INFO] Get request initiated.
+
+2018-05-20 20:56:32,312 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 2, 'doubleroomaval': 3}
+
+2018-05-20 20:56:32,314 [INFO] Update request initiated.
+
+2018-05-20 20:56:32,316 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-20 20:56:32,318 [INFO] Update request initiated.
+
+2018-05-20 20:56:32,321 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 3}
+
+2018-05-20 20:56:32,323 [INFO] Update request initiated.
+
+2018-05-20 20:56:32,325 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:56:32,325 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:56:32,327 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:56:32,329 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:56:32,329 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:56:32,330 [INFO] Update request initiated.
+
+2018-05-20 20:56:32,333 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:56:32,334 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:56:32,336 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:56:32,338 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:56:32,338 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:56:32,339 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:56:33,667 [INFO] Bulk operation succeeded.
+
+2018-05-20 20:56:34,964 [INFO] Bulk operation succeeded.
+
+2018-05-20 20:56:34,972 [INFO] Creating an entry for price table.
+
+2018-05-20 20:56:34,973 [ERROR] {'booking': [ErrorDetail(string=u"'12-05-2018' value has an invalid date format. It must be in YYYY-MM-DD format.", code=u'invalid')]}
+
+2018-05-20 20:56:34,976 [INFO] UPDATE request initiated.
+
+2018-05-20 20:56:34,979 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-20 20:56:34,981 [INFO] UPDATE request initiated.
+
+2018-05-20 20:56:34,984 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-20 20:56:34,986 [INFO] Creating an entry for price table.
+
+2018-05-20 20:56:34,988 [ERROR] {'booking': [ErrorDetail(string=u'price with this booking already exists.', code=u'unique')]}
+
+2018-05-20 20:56:34,991 [INFO] GET request initiated.
+
+2018-05-20 20:56:34,992 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 800, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-20 20:56:34,995 [INFO] UPDATE request initiated.
+
+2018-05-20 20:56:34,997 [ERROR] Invalid price entered.
+
+2018-05-20 20:56:34,998 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:56:35,000 [INFO] Creating an entry for price table.
+
+2018-05-20 20:56:35,002 [ERROR] Invalid price entered.
+
+2018-05-20 20:56:35,002 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:56:35,005 [INFO] UPDATE request initiated.
+
+2018-05-20 20:56:35,007 [ERROR] Invalid price entered.
+
+2018-05-20 20:56:35,008 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:56:35,010 [INFO] Creating an entry for price table.
+
+2018-05-20 20:56:35,013 [ERROR] Invalid price entered.
+
+2018-05-20 20:56:35,013 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:56:35,015 [INFO] Creating an entry for price table.
+
+2018-05-20 20:56:35,018 [INFO] Request completed
+Request Status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 1500, 'booking': datetime.date(2018, 5, 19)}
+
+2018-05-20 20:57:02,365 [INFO] BULK operation initiated.
+
+2018-05-20 20:57:02,379 [INFO] Update request initiated.
+
+2018-05-20 20:57:02,381 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-20 20:57:02,386 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:57:02,388 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-20 20:57:02,390 [INFO] Update request initiated.
+
+2018-05-20 20:57:02,392 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:57:02,392 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:57:02,394 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:57:02,396 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:57:02,396 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:57:02,398 [INFO] Update request initiated.
+
+2018-05-20 20:57:02,400 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:57:02,400 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:57:02,402 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:57:02,404 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:57:02,404 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:57:02,406 [INFO] Update request initiated.
+
+2018-05-20 20:57:02,410 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 2}
+
+2018-05-20 20:57:02,412 [INFO] Update request initiated.
+
+2018-05-20 20:57:02,414 [ERROR] {'date': [ErrorDetail(string=u'booking with this date already exists.', code=u'unique')]}
+
+2018-05-20 20:57:02,417 [INFO] Get request initiated.
+
+2018-05-20 20:57:02,418 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 2, 'doubleroomaval': 3}
+
+2018-05-20 20:57:02,420 [INFO] Update request initiated.
+
+2018-05-20 20:57:02,422 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-20 20:57:02,424 [INFO] Update request initiated.
+
+2018-05-20 20:57:02,427 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 3}
+
+2018-05-20 20:57:02,429 [INFO] Update request initiated.
+
+2018-05-20 20:57:02,431 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:57:02,431 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:57:02,433 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:57:02,435 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:57:02,435 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:57:02,437 [INFO] Update request initiated.
+
+2018-05-20 20:57:02,440 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:57:02,440 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:57:02,442 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:57:02,444 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:57:02,444 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:57:02,446 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:57:03,884 [INFO] Bulk operation succeeded.
+
+2018-05-20 20:57:05,178 [INFO] Bulk operation succeeded.
+
+2018-05-20 20:57:05,186 [INFO] Creating an entry for price table.
+
+2018-05-20 20:57:05,188 [ERROR] {'booking': [ErrorDetail(string=u"'12-05-2018' value has an invalid date format. It must be in YYYY-MM-DD format.", code=u'invalid')]}
+
+2018-05-20 20:57:05,190 [INFO] UPDATE request initiated.
+
+2018-05-20 20:57:05,194 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-20 20:57:05,196 [INFO] UPDATE request initiated.
+
+2018-05-20 20:57:05,198 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-20 20:57:05,201 [INFO] Creating an entry for price table.
+
+2018-05-20 20:57:05,203 [ERROR] {'booking': [ErrorDetail(string=u'price with this booking already exists.', code=u'unique')]}
+
+2018-05-20 20:57:05,205 [INFO] GET request initiated.
+
+2018-05-20 20:57:05,207 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 800, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-20 20:57:05,209 [INFO] UPDATE request initiated.
+
+2018-05-20 20:57:05,212 [ERROR] Invalid price entered.
+
+2018-05-20 20:57:05,212 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:57:05,214 [INFO] Creating an entry for price table.
+
+2018-05-20 20:57:05,216 [ERROR] Invalid price entered.
+
+2018-05-20 20:57:05,217 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:57:05,218 [INFO] UPDATE request initiated.
+
+2018-05-20 20:57:05,221 [ERROR] Invalid price entered.
+
+2018-05-20 20:57:05,221 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:57:05,224 [INFO] Creating an entry for price table.
+
+2018-05-20 20:57:05,226 [ERROR] Invalid price entered.
+
+2018-05-20 20:57:05,226 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:57:05,228 [INFO] Creating an entry for price table.
+
+2018-05-20 20:57:05,231 [INFO] Request completed
+Request Status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 1500, 'booking': datetime.date(2018, 5, 19)}
+
+2018-05-20 20:58:38,009 [INFO] BULK operation initiated.
+
+2018-05-20 20:58:38,024 [INFO] Update request initiated.
+
+2018-05-20 20:58:38,026 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-20 20:58:38,031 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:58:38,032 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-20 20:58:38,034 [INFO] Update request initiated.
+
+2018-05-20 20:58:38,037 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:58:38,037 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:58:38,039 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:58:38,041 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:58:38,041 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:58:38,043 [INFO] Update request initiated.
+
+2018-05-20 20:58:38,045 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:58:38,045 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:58:38,046 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:58:38,048 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:58:38,048 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:58:38,050 [INFO] Update request initiated.
+
+2018-05-20 20:58:38,054 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 2}
+
+2018-05-20 20:58:38,056 [INFO] Update request initiated.
+
+2018-05-20 20:58:38,057 [ERROR] {'date': [ErrorDetail(string=u'booking with this date already exists.', code=u'unique')]}
+
+2018-05-20 20:58:38,059 [INFO] Get request initiated.
+
+2018-05-20 20:58:38,061 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 2, 'doubleroomaval': 3}
+
+2018-05-20 20:58:38,062 [INFO] Update request initiated.
+
+2018-05-20 20:58:38,064 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-20 20:58:38,066 [INFO] Update request initiated.
+
+2018-05-20 20:58:38,069 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 3}
+
+2018-05-20 20:58:38,071 [INFO] Update request initiated.
+
+2018-05-20 20:58:38,073 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:58:38,073 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:58:38,075 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:58:38,077 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:58:38,077 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:58:38,079 [INFO] Update request initiated.
+
+2018-05-20 20:58:38,082 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:58:38,082 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:58:38,084 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:58:38,085 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:58:38,086 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:58:38,087 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:58:39,401 [INFO] Bulk operation succeeded.
+
+2018-05-20 20:58:40,687 [INFO] Bulk operation succeeded.
+
+2018-05-20 20:58:40,698 [INFO] Creating an entry for price table.
+
+2018-05-20 20:58:40,700 [ERROR] {'booking': [ErrorDetail(string=u"'12-05-2018' value has an invalid date format. It must be in YYYY-MM-DD format.", code=u'invalid')]}
+
+2018-05-20 20:58:40,702 [INFO] UPDATE request initiated.
+
+2018-05-20 20:58:40,705 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-20 20:58:40,708 [INFO] UPDATE request initiated.
+
+2018-05-20 20:58:40,710 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-20 20:58:40,712 [INFO] Creating an entry for price table.
+
+2018-05-20 20:58:40,715 [ERROR] {'booking': [ErrorDetail(string=u'price with this booking already exists.', code=u'unique')]}
+
+2018-05-20 20:58:40,717 [INFO] GET request initiated.
+
+2018-05-20 20:58:40,719 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 800, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-20 20:58:40,721 [INFO] UPDATE request initiated.
+
+2018-05-20 20:58:40,723 [ERROR] Invalid price entered.
+
+2018-05-20 20:58:40,724 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:58:40,726 [INFO] Creating an entry for price table.
+
+2018-05-20 20:58:40,728 [ERROR] Invalid price entered.
+
+2018-05-20 20:58:40,728 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:58:40,730 [INFO] UPDATE request initiated.
+
+2018-05-20 20:58:40,733 [ERROR] Invalid price entered.
+
+2018-05-20 20:58:40,734 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:58:40,736 [INFO] Creating an entry for price table.
+
+2018-05-20 20:58:40,738 [ERROR] Invalid price entered.
+
+2018-05-20 20:58:40,739 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:58:40,741 [INFO] Creating an entry for price table.
+
+2018-05-20 20:58:40,743 [INFO] Request completed
+Request Status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 1500, 'booking': datetime.date(2018, 5, 19)}
+
