@@ -1,0 +1,1755 @@
+2018-05-20 19:22:41,344 INFO Get request initiated for Booking
+
+2018-05-20 19:22:41,346 ERROR No details found for given date
+
+2018-05-20 19:22:57,849 INFO Get request initiated for Booking
+
+2018-05-20 19:23:42,857 ERROR Internal Server Error: /getroomdata/2032-10-10/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 34, in get
+    logger.error('No details found for given date')
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 34, in get
+    logger.error('No details found for given date')
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2018-05-20 19:23:54,587 INFO Get request initiated for Booking
+
+2018-05-20 19:23:59,406 INFO Request completed
+{'date': '2032-10-10', 'singleroomaval': 5, 'doubleroomaval': 3}
+
+2018-05-20 19:25:08,072 INFO Get request initiated for Booking
+
+2018-05-20 19:25:12,464 INFO Request completed
+Request status code: 200
+Data: {'date': '2032-10-10', 'singleroomaval': 5, 'doubleroomaval': 3}
+
+2018-05-20 19:26:39,194 INFO Get request initiated for Booking
+
+2018-05-20 19:26:42,043 INFO Request completed
+Request status code: 200
+Data: {'date': '2032-10-10', 'singleroomaval': 5, 'doubleroomaval': 3}
+
+2018-05-20 19:31:21,811 [INFO] Get request initiated for Booking
+
+2018-05-20 19:31:24,491 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2032-10-10', 'singleroomaval': 5, 'doubleroomaval': 3}
+
+2018-05-20 19:31:45,277 [INFO] Get request initiated for Booking
+
+2018-05-20 19:31:45,280 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2032-10-10', 'singleroomaval': 5, 'doubleroomaval': 3}
+
+2018-05-20 19:32:27,166 [INFO] Get request initiated for Booking
+
+2018-05-20 19:32:27,169 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2032-10-10', 'singleroomaval': 5, 'doubleroomaval': 3}
+
+2018-05-20 19:33:36,456 [INFO] Get request initiated for Booking
+
+2018-05-20 19:33:36,458 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2032-10-10', 'singleroomaval': 5, 'doubleroomaval': 3}
+
+2018-05-20 19:33:46,418 [INFO] Get request initiated for Booking
+
+2018-05-20 19:33:46,420 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2032-10-10', 'singleroomaval': 5, 'doubleroomaval': 3}
+
+2018-05-20 19:34:02,023 [INFO] Get request initiated for Booking
+
+2018-05-20 19:34:02,026 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2032-10-10', 'singleroomaval': 5, 'doubleroomaval': 3}
+
+2018-05-20 19:34:53,839 [INFO] Get request initiated for Booking
+
+2018-05-20 19:34:53,842 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2032-10-10', 'singleroomaval': 5, 'doubleroomaval': 3}
+
+2018-05-20 19:39:53,597 [INFO] Update request initiated for Booking
+
+2018-05-20 19:39:53,599 [ERROR] An error was encoutered while trying to update booking.
+{'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-20 19:39:53,605 [INFO] Creating an entry in Booking table
+
+2018-05-20 19:39:53,607 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-20 19:39:53,609 [INFO] Update request initiated for Booking
+
+2018-05-20 19:39:53,611 [ERROR] An error was encoutered while trying to update booking.
+{u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:39:53,613 [INFO] Creating an entry in Booking table
+
+2018-05-20 19:39:53,615 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:39:53,616 [INFO] Update request initiated for Booking
+
+2018-05-20 19:39:53,619 [ERROR] An error was encoutered while trying to update booking.
+{u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:39:53,621 [INFO] Creating an entry in Booking table
+
+2018-05-20 19:39:53,623 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:39:53,625 [INFO] Update request initiated for Booking
+
+2018-05-20 19:39:53,628 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 2}
+
+2018-05-20 19:39:53,630 [INFO] Update request initiated for Booking
+
+2018-05-20 19:39:53,632 [ERROR] An error was encoutered while trying to update booking.
+{'date': [ErrorDetail(string=u'booking with this date already exists.', code=u'unique')]}
+
+2018-05-20 19:39:53,634 [INFO] Get request initiated for Booking
+
+2018-05-20 19:39:53,635 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 2, 'doubleroomaval': 3}
+
+2018-05-20 19:39:53,636 [INFO] Update request initiated for Booking
+
+2018-05-20 19:39:53,638 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-20 19:39:53,640 [INFO] Update request initiated for Booking
+
+2018-05-20 19:39:53,643 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 3}
+
+2018-05-20 19:39:53,645 [INFO] Update request initiated for Booking
+
+2018-05-20 19:39:53,647 [ERROR] An error was encoutered while trying to update booking.
+{u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:39:53,648 [INFO] Creating an entry in Booking table
+
+2018-05-20 19:39:53,650 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:39:53,652 [INFO] Update request initiated for Booking
+
+2018-05-20 19:39:53,656 [ERROR] An error was encoutered while trying to update booking.
+{u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:39:53,657 [INFO] Creating an entry in Booking table
+
+2018-05-20 19:39:53,659 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:39:53,661 [INFO] Creating an entry in Booking table
+
+2018-05-20 19:52:46,281 [INFO] BULK operation initiated.
+
+2018-05-20 19:52:46,296 [INFO] Update request initiated.
+
+2018-05-20 19:52:46,298 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-20 19:52:46,303 [INFO] Creating an entry in Booking table
+
+2018-05-20 19:52:46,305 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-20 19:52:46,307 [INFO] Update request initiated.
+
+2018-05-20 19:52:46,309 [ERROR] Wrong room availability entered.
+
+2018-05-20 19:52:46,309 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:52:46,311 [INFO] Creating an entry in Booking table
+
+2018-05-20 19:52:46,313 [ERROR] Wrong room availability entered.
+
+2018-05-20 19:52:46,313 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:52:46,315 [INFO] Update request initiated.
+
+2018-05-20 19:52:46,317 [ERROR] Wrong room availability entered.
+
+2018-05-20 19:52:46,317 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:52:46,319 [INFO] Creating an entry in Booking table
+
+2018-05-20 19:52:46,321 [ERROR] Wrong room availability entered.
+
+2018-05-20 19:52:46,321 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:52:46,324 [INFO] Update request initiated.
+
+2018-05-20 19:52:46,327 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 2}
+
+2018-05-20 19:52:46,329 [INFO] Update request initiated.
+
+2018-05-20 19:52:46,331 [ERROR] {'date': [ErrorDetail(string=u'booking with this date already exists.', code=u'unique')]}
+
+2018-05-20 19:52:46,333 [INFO] Get request initiated.
+
+2018-05-20 19:52:46,334 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 2, 'doubleroomaval': 3}
+
+2018-05-20 19:52:46,336 [INFO] Update request initiated.
+
+2018-05-20 19:52:46,338 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-20 19:52:46,340 [INFO] Update request initiated.
+
+2018-05-20 19:52:46,343 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 3}
+
+2018-05-20 19:52:46,344 [INFO] Update request initiated.
+
+2018-05-20 19:52:46,346 [ERROR] Wrong room availability entered.
+
+2018-05-20 19:52:46,347 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:52:46,349 [INFO] Creating an entry in Booking table
+
+2018-05-20 19:52:46,351 [ERROR] Wrong room availability entered.
+
+2018-05-20 19:52:46,351 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:52:46,352 [INFO] Update request initiated.
+
+2018-05-20 19:52:46,356 [ERROR] Wrong room availability entered.
+
+2018-05-20 19:52:46,356 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:52:46,358 [INFO] Creating an entry in Booking table
+
+2018-05-20 19:52:46,360 [ERROR] Wrong room availability entered.
+
+2018-05-20 19:52:46,360 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:52:46,362 [INFO] Creating an entry in Booking table
+
+2018-05-20 19:52:46,367 [INFO] Creating an entry for price table.
+
+2018-05-20 19:52:46,369 [ERROR] {'booking': [ErrorDetail(string=u"'12-05-2018' value has an invalid date format. It must be in YYYY-MM-DD format.", code=u'invalid')]}
+
+2018-05-20 19:52:46,371 [INFO] UPDATE request initiated.
+
+2018-05-20 19:52:46,374 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-20 19:52:46,377 [INFO] UPDATE request initiated.
+
+2018-05-20 19:52:46,380 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-20 19:52:46,382 [INFO] Creating an entry for price table.
+
+2018-05-20 19:52:46,384 [ERROR] {'booking': [ErrorDetail(string=u'price with this booking already exists.', code=u'unique')]}
+
+2018-05-20 19:52:46,387 [INFO] GET request initiated.
+
+2018-05-20 19:52:46,388 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 800, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-20 19:52:46,390 [INFO] UPDATE request initiated.
+
+2018-05-20 19:52:46,393 [ERROR] Invalid price entered.
+
+2018-05-20 19:52:46,393 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 19:52:46,395 [INFO] Creating an entry for price table.
+
+2018-05-20 19:52:46,398 [ERROR] Invalid price entered.
+
+2018-05-20 19:52:46,398 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 19:52:46,400 [INFO] UPDATE request initiated.
+
+2018-05-20 19:52:46,403 [ERROR] Invalid price entered.
+
+2018-05-20 19:52:46,403 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 19:52:46,406 [INFO] Creating an entry for price table.
+
+2018-05-20 19:52:46,408 [ERROR] Invalid price entered.
+
+2018-05-20 19:52:46,408 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 19:52:46,410 [INFO] Creating an entry for price table.
+
+2018-05-20 19:52:46,413 [INFO] Request completed
+Request Status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 1500, 'booking': datetime.date(2018, 5, 19)}
+
+2018-05-20 19:53:25,378 [INFO] BULK operation initiated.
+
+2018-05-20 19:53:25,392 [INFO] Update request initiated.
+
+2018-05-20 19:53:25,394 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-20 19:53:25,399 [INFO] Creating an entry in Booking table
+
+2018-05-20 19:53:25,401 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-20 19:53:25,403 [INFO] Update request initiated.
+
+2018-05-20 19:53:25,405 [ERROR] Wrong room availability entered.
+
+2018-05-20 19:53:25,405 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:53:25,407 [INFO] Creating an entry in Booking table
+
+2018-05-20 19:53:25,409 [ERROR] Wrong room availability entered.
+
+2018-05-20 19:53:25,409 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:53:25,411 [INFO] Update request initiated.
+
+2018-05-20 19:53:25,413 [ERROR] Wrong room availability entered.
+
+2018-05-20 19:53:25,413 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:53:25,415 [INFO] Creating an entry in Booking table
+
+2018-05-20 19:53:25,417 [ERROR] Wrong room availability entered.
+
+2018-05-20 19:53:25,417 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:53:25,419 [INFO] Update request initiated.
+
+2018-05-20 19:53:25,423 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 2}
+
+2018-05-20 19:53:25,424 [INFO] Update request initiated.
+
+2018-05-20 19:53:25,426 [ERROR] {'date': [ErrorDetail(string=u'booking with this date already exists.', code=u'unique')]}
+
+2018-05-20 19:53:25,429 [INFO] Get request initiated.
+
+2018-05-20 19:53:25,430 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 2, 'doubleroomaval': 3}
+
+2018-05-20 19:53:25,432 [INFO] Update request initiated.
+
+2018-05-20 19:53:25,434 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-20 19:53:25,435 [INFO] Update request initiated.
+
+2018-05-20 19:53:25,438 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 3}
+
+2018-05-20 19:53:25,440 [INFO] Update request initiated.
+
+2018-05-20 19:53:25,442 [ERROR] Wrong room availability entered.
+
+2018-05-20 19:53:25,442 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:53:25,444 [INFO] Creating an entry in Booking table
+
+2018-05-20 19:53:25,446 [ERROR] Wrong room availability entered.
+
+2018-05-20 19:53:25,446 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:53:25,448 [INFO] Update request initiated.
+
+2018-05-20 19:53:25,451 [ERROR] Wrong room availability entered.
+
+2018-05-20 19:53:25,451 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:53:25,453 [INFO] Creating an entry in Booking table
+
+2018-05-20 19:53:25,455 [ERROR] Wrong room availability entered.
+
+2018-05-20 19:53:25,455 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 19:53:25,457 [INFO] Creating an entry in Booking table
+
+2018-05-20 19:53:25,462 [INFO] Creating an entry for price table.
+
+2018-05-20 19:53:25,464 [ERROR] {'booking': [ErrorDetail(string=u"'12-05-2018' value has an invalid date format. It must be in YYYY-MM-DD format.", code=u'invalid')]}
+
+2018-05-20 19:53:25,467 [INFO] UPDATE request initiated.
+
+2018-05-20 19:53:25,470 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-20 19:53:25,472 [INFO] UPDATE request initiated.
+
+2018-05-20 19:53:25,475 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-20 19:53:25,477 [INFO] Creating an entry for price table.
+
+2018-05-20 19:53:25,480 [ERROR] {'booking': [ErrorDetail(string=u'price with this booking already exists.', code=u'unique')]}
+
+2018-05-20 19:53:25,482 [INFO] GET request initiated.
+
+2018-05-20 19:53:25,483 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 800, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-20 19:53:25,485 [INFO] UPDATE request initiated.
+
+2018-05-20 19:53:25,488 [ERROR] Invalid price entered.
+
+2018-05-20 19:53:25,488 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 19:53:25,491 [INFO] Creating an entry for price table.
+
+2018-05-20 19:53:25,493 [ERROR] Invalid price entered.
+
+2018-05-20 19:53:25,493 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 19:53:25,495 [INFO] UPDATE request initiated.
+
+2018-05-20 19:53:25,498 [ERROR] Invalid price entered.
+
+2018-05-20 19:53:25,499 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 19:53:25,501 [INFO] Creating an entry for price table.
+
+2018-05-20 19:53:25,503 [ERROR] Invalid price entered.
+
+2018-05-20 19:53:25,504 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 19:53:25,505 [INFO] Creating an entry for price table.
+
+2018-05-20 19:53:25,509 [INFO] Request completed
+Request Status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 1500, 'booking': datetime.date(2018, 5, 19)}
+
+2018-05-20 20:03:13,063 [INFO] BULK operation initiated.
+
+2018-05-20 20:03:14,670 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:49,443 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 131, in put
+    from_date = from_date + delta
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 131, in put
+    from_date = from_date + delta
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2018-05-20 20:03:55,848 [INFO] BULK operation initiated.
+
+2018-05-20 20:03:57,257 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,279 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,301 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,324 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,341 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,364 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,380 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,403 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,432 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,455 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,480 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,505 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,528 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,554 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,581 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,606 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,633 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,659 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,686 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,715 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,744 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,770 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,793 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,841 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,868 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,893 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,923 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,953 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:57,983 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,015 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,045 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,079 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,108 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,133 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,150 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,173 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,195 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,218 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,241 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,267 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,290 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,312 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,335 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,357 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,382 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,429 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,452 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,479 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,502 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,533 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,556 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,578 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,601 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,626 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,658 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,689 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,712 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,734 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,762 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,785 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,808 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,844 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,868 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,891 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,917 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,944 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,969 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:58,998 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,027 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,056 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,085 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,115 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,146 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,176 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,205 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,235 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,263 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,293 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,322 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,358 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,388 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,416 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,446 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,475 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,505 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,534 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,563 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,597 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,628 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,658 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,687 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,718 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,748 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,779 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,808 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,839 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,866 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,917 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,953 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:03:59,984 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,017 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,045 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,068 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,087 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,121 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,155 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,185 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,215 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,246 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,277 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,305 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,333 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,363 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,395 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,426 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,458 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,489 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,518 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,549 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,578 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,613 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,643 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,676 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,705 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,735 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,765 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,794 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,823 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,859 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,890 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,921 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,950 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:00,989 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,020 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,068 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,099 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,134 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,166 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,196 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,225 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,255 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,284 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,314 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,349 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,382 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,413 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,444 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,474 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,505 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,535 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,565 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,597 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,628 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,663 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,694 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,725 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,755 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,786 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,817 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,847 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,878 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,911 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,944 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:01,975 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,013 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,045 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,075 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,106 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,137 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,171 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,202 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,252 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,283 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,315 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,345 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,375 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,405 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,439 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,468 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,498 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,529 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,561 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,593 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,623 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,651 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,685 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,718 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,744 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,774 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,805 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,835 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,865 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,895 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,929 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,960 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:02,990 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,022 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,052 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,080 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,111 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,142 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,177 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,207 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,236 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,266 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,296 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,327 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,361 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,414 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,452 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,483 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,514 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,546 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,577 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,608 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,639 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,670 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,705 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,735 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,766 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,797 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,827 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,857 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,888 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,919 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,952 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:03,981 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,012 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,047 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,081 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,113 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,145 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,175 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,204 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,232 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,264 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,295 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,328 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,363 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,391 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,415 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,442 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,465 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,488 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,512 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,551 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,575 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,598 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,621 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,648 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,674 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,701 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,733 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,762 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,786 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,812 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,843 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,876 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,908 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,938 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,964 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:04,989 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,020 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,055 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,089 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,130 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,161 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,194 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,225 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,255 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,279 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,306 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,332 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,366 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,396 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,422 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,440 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,464 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,487 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,509 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,533 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,556 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,582 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,625 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,657 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,686 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,709 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,732 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,748 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,771 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,800 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,832 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,863 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,897 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,928 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,960 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:05,992 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,023 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,058 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,084 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,107 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,130 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,156 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,186 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,218 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,248 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,280 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,314 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,344 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,375 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,407 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,437 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,467 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,497 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,527 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,564 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,598 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,627 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,654 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,732 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,779 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,812 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,843 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,877 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,909 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,940 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:06,971 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,017 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,053 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,088 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,122 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,156 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,188 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,220 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,251 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,282 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,317 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,352 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,383 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,414 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,446 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,476 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,505 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,535 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,566 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,601 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,632 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,663 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,694 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,725 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,756 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,786 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,818 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,853 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,906 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,937 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:07,968 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:08,001 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:08,032 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:08,062 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:08,093 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:08,129 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:08,160 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:08,188 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:08,217 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:08,248 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:08,279 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:04:08,306 [INFO] Bulk operation succeeded.
+
+2018-05-20 20:04:22,983 [WARNING] Not Found: /static/admin/js/jquery.init.js
+
+2018-05-20 20:04:22,985 [WARNING] Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+
+2018-05-20 20:04:22,986 [WARNING] Not Found: /static/admin/js/actions.min.js
+
+2018-05-20 20:04:22,992 [WARNING] Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+
+2018-05-20 20:04:22,993 [WARNING] Not Found: /static/admin/js/prepopulate.min.js
+
+2018-05-20 20:04:23,159 [WARNING] Not Found: /static/admin/css/fonts.css
+
+2018-05-20 20:04:23,210 [WARNING] Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+
+2018-05-20 20:04:23,214 [WARNING] Not Found: /static/admin/js/jquery.init.js
+
+2018-05-20 20:04:23,219 [WARNING] Not Found: /static/admin/js/actions.min.js
+
+2018-05-20 20:04:23,223 [WARNING] Not Found: /static/admin/js/prepopulate.min.js
+
+2018-05-20 20:04:23,227 [WARNING] Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+
+2018-05-20 20:04:23,316 [WARNING] Not Found: /static/admin/img/tooltag-add.svg
+
+2018-05-20 20:04:24,526 [WARNING] Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+
+2018-05-20 20:04:24,534 [WARNING] Not Found: /static/admin/js/jquery.init.js
+
+2018-05-20 20:04:24,537 [WARNING] Not Found: /static/admin/js/actions.min.js
+
+2018-05-20 20:04:24,539 [WARNING] Not Found: /static/admin/js/prepopulate.min.js
+
+2018-05-20 20:04:24,540 [WARNING] Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+
+2018-05-20 20:04:24,553 [WARNING] Not Found: /static/admin/js/change_form.js
+
+2018-05-20 20:04:24,569 [WARNING] Not Found: /static/admin/js/prepopulate_init.js
+
+2018-05-20 20:04:24,584 [WARNING] Not Found: /static/admin/css/fonts.css
+
+2018-05-20 20:04:24,623 [WARNING] Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+
+2018-05-20 20:04:24,626 [WARNING] Not Found: /static/admin/js/jquery.init.js
+
+2018-05-20 20:04:24,631 [WARNING] Not Found: /static/admin/js/actions.min.js
+
+2018-05-20 20:04:24,635 [WARNING] Not Found: /static/admin/js/prepopulate.min.js
+
+2018-05-20 20:04:24,638 [WARNING] Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+
+2018-05-20 20:04:24,675 [WARNING] Not Found: /static/admin/js/change_form.js
+
+2018-05-20 20:04:24,688 [WARNING] Not Found: /static/admin/js/prepopulate_init.js
+
+2018-05-20 20:06:23,216 [INFO] BULK operation initiated.
+
+2018-05-20 20:06:32,578 [INFO] BULK operation initiated.
+
+2018-05-20 20:06:41,069 [WARNING] Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+
+2018-05-20 20:06:41,077 [WARNING] Not Found: /static/admin/js/actions.min.js
+
+2018-05-20 20:06:41,078 [WARNING] Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+
+2018-05-20 20:06:41,080 [WARNING] Not Found: /static/admin/js/prepopulate.min.js
+
+2018-05-20 20:06:41,270 [WARNING] Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+
+2018-05-20 20:06:41,306 [WARNING] Not Found: /static/admin/js/actions.min.js
+
+2018-05-20 20:06:41,310 [WARNING] Not Found: /static/admin/js/prepopulate.min.js
+
+2018-05-20 20:06:41,314 [WARNING] Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+
+2018-05-20 20:06:46,199 [WARNING] Not Found: /static/admin/css/base.css
+
+2018-05-20 20:06:46,202 [WARNING] Not Found: /static/admin/css/forms.css
+
+2018-05-20 20:06:46,218 [WARNING] Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+
+2018-05-20 20:06:46,222 [WARNING] Not Found: /static/admin/js/jquery.init.js
+
+2018-05-20 20:06:46,225 [WARNING] Not Found: /static/admin/js/core.js
+
+2018-05-20 20:06:46,228 [WARNING] Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+
+2018-05-20 20:06:46,231 [WARNING] Not Found: /static/admin/js/actions.min.js
+
+2018-05-20 20:06:46,233 [WARNING] Not Found: /static/admin/js/urlify.js
+
+2018-05-20 20:06:46,234 [WARNING] Not Found: /static/admin/js/prepopulate.min.js
+
+2018-05-20 20:06:46,237 [WARNING] Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+
+2018-05-20 20:06:46,239 [WARNING] Not Found: /static/admin/js/change_form.js
+
+2018-05-20 20:06:46,242 [WARNING] Not Found: /static/admin/js/prepopulate_init.js
+
+2018-05-20 20:06:46,278 [WARNING] Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+
+2018-05-20 20:06:46,285 [WARNING] Not Found: /static/admin/js/jquery.init.js
+
+2018-05-20 20:06:46,297 [WARNING] Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+
+2018-05-20 20:06:46,301 [WARNING] Not Found: /static/admin/js/actions.min.js
+
+2018-05-20 20:06:46,305 [WARNING] Not Found: /static/admin/js/urlify.js
+
+2018-05-20 20:06:46,308 [WARNING] Not Found: /static/admin/js/prepopulate.min.js
+
+2018-05-20 20:06:46,312 [WARNING] Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+
+2018-05-20 20:06:46,315 [WARNING] Not Found: /static/admin/js/change_form.js
+
+2018-05-20 20:06:46,319 [WARNING] Not Found: /static/admin/js/prepopulate_init.js
+
+2018-05-20 20:06:46,493 [WARNING] Not Found: /favicon.ico
+
+2018-05-20 20:06:48,535 [WARNING] Not Found: /static/admin/css/base.css
+
+2018-05-20 20:06:48,546 [WARNING] Not Found: /static/admin/css/forms.css
+
+2018-05-20 20:06:48,568 [WARNING] Not Found: /static/admin/js/core.js
+
+2018-05-20 20:06:48,576 [WARNING] Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+
+2018-05-20 20:06:48,578 [WARNING] Not Found: /static/admin/js/jquery.init.js
+
+2018-05-20 20:06:48,586 [WARNING] Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+
+2018-05-20 20:06:48,587 [WARNING] Not Found: /static/admin/js/urlify.js
+
+2018-05-20 20:06:48,590 [WARNING] Not Found: /static/admin/js/prepopulate.min.js
+
+2018-05-20 20:06:48,591 [WARNING] Not Found: /static/admin/js/actions.min.js
+
+2018-05-20 20:06:48,591 [WARNING] Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+
+2018-05-20 20:06:48,593 [WARNING] Not Found: /static/admin/js/change_form.js
+
+2018-05-20 20:06:48,598 [WARNING] Not Found: /static/admin/js/prepopulate_init.js
+
+2018-05-20 20:06:48,614 [WARNING] Not Found: /static/admin/js/urlify.js
+
+2018-05-20 20:06:48,617 [WARNING] Not Found: /static/admin/js/prepopulate.min.js
+
+2018-05-20 20:06:48,621 [WARNING] Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+
+2018-05-20 20:06:48,649 [WARNING] Not Found: /static/admin/js/change_form.js
+
+2018-05-20 20:06:48,666 [WARNING] Not Found: /static/admin/js/prepopulate_init.js
+
+2018-05-20 20:06:48,805 [WARNING] Not Found: /favicon.ico
+
+2018-05-20 20:06:53,007 [WARNING] Not Found: /static/admin/css/base.css
+
+2018-05-20 20:06:53,012 [WARNING] Not Found: /static/admin/css/dashboard.css
+
+2018-05-20 20:06:58,261 [INFO] BULK operation initiated.
+
+2018-05-20 20:07:06,626 [INFO] BULK operation initiated.
+
+2018-05-20 20:07:09,299 [WARNING] Not Found: /static/admin/js/core.js
+
+2018-05-20 20:07:09,300 [WARNING] Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+
+2018-05-20 20:07:09,301 [WARNING] Not Found: /static/admin/js/jquery.init.js
+
+2018-05-20 20:07:09,303 [WARNING] Not Found: /static/admin/js/actions.min.js
+
+2018-05-20 20:07:09,304 [WARNING] Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+
+2018-05-20 20:07:09,333 [WARNING] Not Found: /static/admin/js/urlify.js
+
+2018-05-20 20:07:09,345 [WARNING] Not Found: /static/admin/js/prepopulate.min.js
+
+2018-05-20 20:07:09,347 [WARNING] Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+
+2018-05-20 20:07:09,375 [WARNING] Not Found: /static/admin/js/core.js
+
+2018-05-20 20:07:09,379 [WARNING] Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+
+2018-05-20 20:07:09,383 [WARNING] Not Found: /static/admin/js/jquery.init.js
+
+2018-05-20 20:07:09,386 [WARNING] Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+
+2018-05-20 20:07:09,390 [WARNING] Not Found: /static/admin/js/actions.min.js
+
+2018-05-20 20:07:09,393 [WARNING] Not Found: /static/admin/js/urlify.js
+
+2018-05-20 20:07:09,397 [WARNING] Not Found: /static/admin/js/prepopulate.min.js
+
+2018-05-20 20:07:09,401 [WARNING] Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+
+2018-05-20 20:07:09,442 [WARNING] Not Found: /static/admin/img/tooltag-add.svg
+
+2018-05-20 20:07:10,658 [WARNING] Not Found: /static/admin/js/core.js
+
+2018-05-20 20:07:10,663 [WARNING] Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+
+2018-05-20 20:07:10,664 [WARNING] Not Found: /static/admin/js/jquery.init.js
+
+2018-05-20 20:07:10,665 [WARNING] Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+
+2018-05-20 20:07:10,672 [WARNING] Not Found: /static/admin/js/urlify.js
+
+2018-05-20 20:07:10,673 [WARNING] Not Found: /static/admin/js/actions.min.js
+
+2018-05-20 20:07:10,676 [WARNING] Not Found: /static/admin/css/forms.css
+
+2018-05-20 20:07:10,682 [WARNING] Not Found: /static/admin/js/prepopulate.min.js
+
+2018-05-20 20:07:10,688 [WARNING] Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+
+2018-05-20 20:07:10,698 [WARNING] Not Found: /static/admin/js/change_form.js
+
+2018-05-20 20:07:10,699 [WARNING] Not Found: /static/admin/js/prepopulate_init.js
+
+2018-05-20 20:07:10,723 [WARNING] Not Found: /static/admin/js/core.js
+
+2018-05-20 20:07:10,727 [WARNING] Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+
+2018-05-20 20:07:10,735 [WARNING] Not Found: /static/admin/js/jquery.init.js
+
+2018-05-20 20:07:10,754 [WARNING] Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+
+2018-05-20 20:07:10,757 [WARNING] Not Found: /static/admin/js/actions.min.js
+
+2018-05-20 20:07:10,761 [WARNING] Not Found: /static/admin/js/urlify.js
+
+2018-05-20 20:07:10,765 [WARNING] Not Found: /static/admin/js/prepopulate.min.js
+
+2018-05-20 20:07:10,769 [WARNING] Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+
+2018-05-20 20:07:10,773 [WARNING] Not Found: /static/admin/js/change_form.js
+
+2018-05-20 20:07:10,807 [WARNING] Not Found: /static/admin/js/prepopulate_init.js
+
+2018-05-20 20:07:10,813 [WARNING] Not Found: /static/admin/img/icon-deletelink.svg
+
+2018-05-20 20:08:24,921 [INFO] BULK operation initiated.
+
+2018-05-20 20:08:38,338 [INFO] BULK operation initiated.
+
+2018-05-20 20:08:46,664 [INFO] BULK operation initiated.
+
+2018-05-20 20:09:18,376 [INFO] BULK operation initiated.
+
+2018-05-20 20:09:25,690 [INFO] BULK operation initiated.
+
+2018-05-20 20:09:32,384 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:09:32,385 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:17:21,633 [INFO] BULK operation initiated.
+
+2018-05-20 20:17:21,648 [INFO] Update request initiated.
+
+2018-05-20 20:17:21,650 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-20 20:17:21,654 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:17:21,656 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-20 20:17:21,658 [INFO] Update request initiated.
+
+2018-05-20 20:17:21,660 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:17:21,660 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:17:21,662 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:17:21,664 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:17:21,664 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:17:21,666 [INFO] Update request initiated.
+
+2018-05-20 20:17:21,668 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:17:21,668 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:17:21,670 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:17:21,672 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:17:21,672 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:17:21,674 [INFO] Update request initiated.
+
+2018-05-20 20:17:21,677 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 2}
+
+2018-05-20 20:17:21,679 [INFO] Update request initiated.
+
+2018-05-20 20:17:21,681 [ERROR] {'date': [ErrorDetail(string=u'booking with this date already exists.', code=u'unique')]}
+
+2018-05-20 20:17:21,683 [INFO] Get request initiated.
+
+2018-05-20 20:17:21,684 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 2, 'doubleroomaval': 3}
+
+2018-05-20 20:17:21,686 [INFO] Update request initiated.
+
+2018-05-20 20:17:21,688 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-20 20:17:21,690 [INFO] Update request initiated.
+
+2018-05-20 20:17:21,693 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 3}
+
+2018-05-20 20:17:21,694 [INFO] Update request initiated.
+
+2018-05-20 20:17:21,697 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:17:21,697 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:17:21,699 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:17:21,700 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:17:21,700 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:17:21,702 [INFO] Update request initiated.
+
+2018-05-20 20:17:21,705 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:17:21,706 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:17:21,708 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:17:21,709 [ERROR] Wrong room availability entered.
+
+2018-05-20 20:17:21,709 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-20 20:17:21,711 [INFO] Creating an entry in Booking table
+
+2018-05-20 20:17:23,031 [INFO] Bulk operation succeeded.
+
+2018-05-20 20:17:24,344 [INFO] Bulk operation succeeded.
+
+2018-05-20 20:17:24,348 [INFO] Creating an entry for price table.
+
+2018-05-20 20:17:24,350 [ERROR] {'booking': [ErrorDetail(string=u"'12-05-2018' value has an invalid date format. It must be in YYYY-MM-DD format.", code=u'invalid')]}
+
+2018-05-20 20:17:24,352 [INFO] UPDATE request initiated.
+
+2018-05-20 20:17:24,355 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-20 20:17:24,358 [INFO] UPDATE request initiated.
+
+2018-05-20 20:17:24,361 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-20 20:17:24,363 [INFO] Creating an entry for price table.
+
+2018-05-20 20:17:24,365 [ERROR] {'booking': [ErrorDetail(string=u'price with this booking already exists.', code=u'unique')]}
+
+2018-05-20 20:17:24,367 [INFO] GET request initiated.
+
+2018-05-20 20:17:24,368 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 800, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-20 20:17:24,371 [INFO] UPDATE request initiated.
+
+2018-05-20 20:17:24,374 [ERROR] Invalid price entered.
+
+2018-05-20 20:17:24,374 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:17:24,376 [INFO] Creating an entry for price table.
+
+2018-05-20 20:17:24,378 [ERROR] Invalid price entered.
+
+2018-05-20 20:17:24,379 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:17:24,381 [INFO] UPDATE request initiated.
+
+2018-05-20 20:17:24,384 [ERROR] Invalid price entered.
+
+2018-05-20 20:17:24,384 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:17:24,386 [INFO] Creating an entry for price table.
+
+2018-05-20 20:17:24,389 [ERROR] Invalid price entered.
+
+2018-05-20 20:17:24,389 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-20 20:17:24,391 [INFO] Creating an entry for price table.
+
+2018-05-20 20:17:24,394 [INFO] Request completed
+Request Status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 1500, 'booking': datetime.date(2018, 5, 19)}
+
+2018-05-20 20:20:12,935 [INFO] BULK operation initiated.
+
+2018-05-20 20:20:14,343 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 93, in put
+    from_date = datetime.datetime.strptime(from_date, '%Y-%m-%d').date()
+TypeError: strptime() argument 1 must be string, not None
+2018-05-20 20:20:31,478 [INFO] BULK operation initiated.
+
+2018-05-20 20:21:06,145 [INFO] BULK operation initiated.
+
+2018-05-20 20:21:12,476 [INFO] BULK operation initiated.
+
+2018-05-20 20:21:15,735 [INFO] BULK operation initiated.
+
+2018-05-20 20:23:56,238 [INFO] BULK operation initiated.
+
+2018-05-20 20:24:05,816 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 100, in put
+    from_date = datetime.datetime.strptime(from_date, '%Y-%m-%d').date()
+TypeError: strptime() argument 1 must be string, not None
+2018-05-20 20:24:18,796 [INFO] BULK operation initiated.
+
+2018-05-20 20:24:20,880 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 100, in put
+    from_date = datetime.datetime.strptime(from_date, '%Y-%m-%d').date()
+TypeError: strptime() argument 1 must be string, not None
+2018-05-20 20:28:23,434 [INFO] BULK operation initiated.
+
+2018-05-20 20:28:30,929 [ERROR] Incomplete payload.
+
+2018-05-20 20:28:56,283 [INFO] BULK operation initiated.
+
+2018-05-20 20:28:59,782 [ERROR] Incomplete payload.
+
+2018-05-20 20:29:14,702 [ERROR] Incomplete payload.
+
+2018-05-20 20:29:23,467 [ERROR] Incomplete payload.
+
+2018-05-20 20:29:32,806 [ERROR] Incomplete payload.
+
+2018-05-20 20:29:57,359 [INFO] BULK operation initiated.
+
+2018-05-20 20:32:38,987 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 98, in put
+    logger.error('Incomplete payload.')
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 98, in put
+    logger.error('Incomplete payload.')
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2018-05-20 20:35:52,015 [INFO] BULK operation initiated.
+
+2018-05-20 20:36:11,036 [ERROR] Incomplete payload.
+
+2018-05-20 20:36:16,636 [INFO] BULK operation initiated.
+
+2018-05-20 20:36:34,450 [INFO] Bulk operation succeeded.
+
+2018-05-20 20:36:46,152 [ERROR] Incomplete payload.
+
+2018-05-20 20:36:53,439 [ERROR] Incomplete payload.
+
+2018-05-20 20:37:01,952 [ERROR] Incomplete payload.
+
+2018-05-20 20:37:08,945 [ERROR] Incomplete payload.
+
+2018-05-20 20:37:17,785 [ERROR] Incomplete payload.
+
+2018-05-20 20:37:31,251 [INFO] Bulk operation succeeded.
+
+2018-05-20 20:38:14,605 [INFO] BULK operation initiated.
+
