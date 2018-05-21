@@ -109,9 +109,8 @@ class BulkOperationsApi(APIView):
 
         post_booking = {}
         post_price = {}
-        
         while from_date <= to_date:
-            if from_date.isoweekday() in days:
+            if str(from_date.isoweekday()) in days:
                 post_booking['date'] = from_date
                 post_price['booking'] = from_date
                 if room_type == 'double':
@@ -143,3 +142,6 @@ class BulkOperationsApi(APIView):
             from_date = from_date + delta
         logger.info('Bulk operation succeeded.')
         return Response({'success': True, 'Message': 'Operation Succeeded'}, status=status.HTTP_200_OK)
+
+def home(request):
+    return render(request, 'api/home.html',{})

@@ -1,0 +1,159 @@
+{% extends 'api/base.html' %} {% block extend_head %}
+<style>
+    body {
+        min-height: 2000px;
+        padding-top: 70px;
+    }
+</style>
+{% endblock extend_head %} {% block content %}
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Hotel</a>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container">
+
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <h3>Bulk Operations</h3>
+        <hr>
+        <form method="" class="form-horizontal" id="bulk">
+            <div class="form-group">
+                <label for="roomtypes" class="col-sm-2 control-label">Select Room</label>
+                <div class="col-sm-2">
+                    <select class="form-control" id="roomtypes">
+                        <option value="single">Single Room</option>
+                        <option value="double">Double Room</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="timeperiod" class="col-sm-2 control-label">Select Days</label>
+                <div class="row" id="timeperiod">
+                    <div class="col-sm-2">
+                        <input type="text" name="" class="form-control" id="fromdate" placeholder="From Date">
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="text" name="" class="form-control" id="todate" placeholder="To Date">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <h4>Refine days</h4>
+                <div class="checkbox col-sm-2">
+                    <input type="checkbox" name="days" value="1"> Monday
+                </div>
+                <div class="checkbox col-sm-2">
+                    <input type="checkbox" name="days" value="2"> Tuesday
+                </div>
+                <div class="checkbox col-sm-2">
+                    <input type="checkbox" name="days" value="3"> Wednesday
+                </div>
+                <div class="checkbox col-sm-2">
+                    <input type="checkbox" name="days" value="4"> Thursday
+                </div>
+                <div class="checkbox col-sm-2">
+                    <input type="checkbox" name="days" value="5"> Friday
+                </div>
+                <div class="checkbox col-sm-2">
+                    <input type="checkbox" name="days" value="6"> Saturday
+                </div>
+                <div class="checkbox col-sm-2">
+                    <input type="checkbox" name="days" value="7"> Sunday
+                </div>
+                <div class="checkbox col-sm-2">
+                    <input type="checkbox" name="days" value="[1,2,3,4,5,6,7]"> All days
+                </div>
+                <div class="checkbox col-sm-2">
+                    <input type="checkbox" name="days" value="[1,2,3,4,5]"> All weekdays
+                </div>
+                <div class="checkbox col-sm-2">
+                    <input type="checkbox" name="days" value="[6,7]"> All weekends
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="price" class="col-sm-2 control-label">Change price to</label>
+                <div class="col-sm-2">
+                    <input type="text" name="" class="form-control" id="price" value="" placeholder="Price">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="aval" class="col-sm-2 control-label">Change availability to</label>
+                <div class="col-sm-2">
+                    <input type="text" name="" class="form-control" id="aval" value="" placeholder="Availability">
+                </div>
+            </div>
+            <button type="submit" id="submit" class="btn btn-primary">Update</button>
+        </form>
+    </div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+<script>
+    $("#submit").click(function (event) {
+        var room_type = $('#bulk').find(":selected").val();
+        var from_date = $('#fromdate').val();
+        var to_date = $('#todate').val();
+        var price = $('#price').val();
+        var aval = $('#aval').val();
+        var days = [];
+        $("input[name='days']:checked").each(function () {
+            days.push(this.value);
+        });
+        var data = {};
+        data ["from_date"] = from_date;
+        data ["to_date"] = to_date;
+        data ["days"] = JSON.stringify(days);
+        data ["room_type"] = room_type;
+        data ["price"] = price;
+        data ["availability"] = aval;
+        data ["csrfmiddlewaretoken"] = '{{ csrf_token }}';
+        event.preventDefault();
+        $.ajaxSetup({
+            headers: { "X-CSRFToken": '{{csrf_token}}' }
+          });
+        $.ajax({
+            type: "PUT",
+            url: "/bulk/",
+            data: data,
+            success: function () {
+                alert("Saved! It worked.");
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("some error " + String(errorThrown) + String(textStatus) + String(XMLHttpRequest.responseText));
+            }
+        });
+    });
+    {% comment %} $(".request_issue").change(function (e) {
+        var form = $(this).parent().parent().parent();
+        console.log(form);
+        request_val = $(this).val();
+        bookid = $(this).parent().parent().siblings("input").next().next().val();
+        usermail = $(this).parent().parent().siblings("input").next().next().next().val()
+        e.preventDefault();
+        $.ajax({
+            url: '{% url "change_request_issue" %}',
+            data: {
+                'request_val': request_val,
+                'bookid': bookid,
+                'usermail': usermail
+            },
+            dataType: 'json',
+            success: function (data) {
+                if (data.valdb) {
+                    console.log("Issue request has been sent");
+                    form.submit();
+                }
+            }
+        });
+    }); {% endcomment %}
+</script>
+<!-- /container -->
+{% endblock content %}

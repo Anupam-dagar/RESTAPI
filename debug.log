@@ -2473,3 +2473,1837 @@ Data: {'pricesingle': 800, 'pricedouble': 900, 'booking': datetime.date(2018, 5,
 Request Status code: 200
 Data: {'pricesingle': 1000, 'pricedouble': 1500, 'booking': datetime.date(2018, 5, 19)}
 
+2018-05-21 15:14:41,851 [INFO] BULK operation initiated.
+
+2018-05-21 15:32:11,508 [INFO] BULK operation initiated.
+
+2018-05-21 15:32:11,525 [INFO] Update request initiated.
+
+2018-05-21 15:32:11,527 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-21 15:32:11,532 [INFO] Creating an entry in Booking table
+
+2018-05-21 15:32:11,534 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-21 15:32:11,536 [INFO] Update request initiated.
+
+2018-05-21 15:32:11,538 [ERROR] Wrong room availability entered.
+
+2018-05-21 15:32:11,538 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 15:32:11,540 [INFO] Creating an entry in Booking table
+
+2018-05-21 15:32:11,542 [ERROR] Wrong room availability entered.
+
+2018-05-21 15:32:11,542 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 15:32:11,544 [INFO] Update request initiated.
+
+2018-05-21 15:32:11,546 [ERROR] Wrong room availability entered.
+
+2018-05-21 15:32:11,546 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 15:32:11,548 [INFO] Creating an entry in Booking table
+
+2018-05-21 15:32:11,550 [ERROR] Wrong room availability entered.
+
+2018-05-21 15:32:11,550 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 15:32:11,552 [INFO] Update request initiated.
+
+2018-05-21 15:32:11,556 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 2}
+
+2018-05-21 15:32:11,557 [INFO] Update request initiated.
+
+2018-05-21 15:32:11,559 [ERROR] {'date': [ErrorDetail(string=u'booking with this date already exists.', code=u'unique')]}
+
+2018-05-21 15:32:11,562 [INFO] Get request initiated.
+
+2018-05-21 15:32:11,563 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 2, 'doubleroomaval': 3}
+
+2018-05-21 15:32:11,565 [INFO] Update request initiated.
+
+2018-05-21 15:32:11,567 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-21 15:32:11,569 [INFO] Update request initiated.
+
+2018-05-21 15:32:11,573 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 3}
+
+2018-05-21 15:32:11,574 [INFO] Update request initiated.
+
+2018-05-21 15:32:11,577 [ERROR] Wrong room availability entered.
+
+2018-05-21 15:32:11,577 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 15:32:11,579 [INFO] Creating an entry in Booking table
+
+2018-05-21 15:32:11,580 [ERROR] Wrong room availability entered.
+
+2018-05-21 15:32:11,581 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 15:32:11,583 [INFO] Update request initiated.
+
+2018-05-21 15:32:11,586 [ERROR] Wrong room availability entered.
+
+2018-05-21 15:32:11,586 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 15:32:11,588 [INFO] Creating an entry in Booking table
+
+2018-05-21 15:32:11,589 [ERROR] Wrong room availability entered.
+
+2018-05-21 15:32:11,590 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 15:32:11,591 [INFO] Creating an entry in Booking table
+
+2018-05-21 15:32:12,909 [INFO] Bulk operation succeeded.
+
+2018-05-21 15:32:14,219 [INFO] Bulk operation succeeded.
+
+2018-05-21 15:32:14,230 [INFO] Creating an entry for price table.
+
+2018-05-21 15:32:14,232 [ERROR] {'booking': [ErrorDetail(string=u"'12-05-2018' value has an invalid date format. It must be in YYYY-MM-DD format.", code=u'invalid')]}
+
+2018-05-21 15:32:14,234 [INFO] UPDATE request initiated.
+
+2018-05-21 15:32:14,238 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-21 15:32:14,240 [INFO] UPDATE request initiated.
+
+2018-05-21 15:32:14,243 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-21 15:32:14,245 [INFO] Creating an entry for price table.
+
+2018-05-21 15:32:14,247 [ERROR] {'booking': [ErrorDetail(string=u'price with this booking already exists.', code=u'unique')]}
+
+2018-05-21 15:32:14,250 [INFO] GET request initiated.
+
+2018-05-21 15:32:14,251 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 800, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-21 15:32:14,253 [INFO] UPDATE request initiated.
+
+2018-05-21 15:32:14,256 [ERROR] Invalid price entered.
+
+2018-05-21 15:32:14,256 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 15:32:14,259 [INFO] Creating an entry for price table.
+
+2018-05-21 15:32:14,261 [ERROR] Invalid price entered.
+
+2018-05-21 15:32:14,261 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 15:32:14,263 [INFO] UPDATE request initiated.
+
+2018-05-21 15:32:14,266 [ERROR] Invalid price entered.
+
+2018-05-21 15:32:14,267 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 15:32:14,269 [INFO] Creating an entry for price table.
+
+2018-05-21 15:32:14,271 [ERROR] Invalid price entered.
+
+2018-05-21 15:32:14,271 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 15:32:14,274 [INFO] Creating an entry for price table.
+
+2018-05-21 15:32:14,277 [INFO] Request completed
+Request Status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 1500, 'booking': datetime.date(2018, 5, 19)}
+
+2018-05-21 15:32:20,771 [INFO] BULK operation initiated.
+
+2018-05-21 15:32:37,972 [WARNING] Not Found: /
+
+2018-05-21 15:32:38,963 [WARNING] Not Found: /favicon.ico
+
+2018-05-21 15:39:32,979 [INFO] BULK operation initiated.
+
+2018-05-21 15:40:31,231 [INFO] BULK operation initiated.
+
+2018-05-21 15:40:37,367 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-21 15:42:32,737 [INFO] BULK operation initiated.
+
+2018-05-21 15:42:34,946 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 148, in home
+    return render(request, 'api/home.html',{})
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 68, in render
+    reraise(exc, self.backend)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 154, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 151, in get_parent
+    return self.find_template(parent, context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 131, in find_template
+    template_name, skip=history,
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: base.html
+2018-05-21 15:42:50,907 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 148, in home
+    return render(request, 'api/home.html',{})
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 68, in render
+    reraise(exc, self.backend)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 154, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 151, in get_parent
+    return self.find_template(parent, context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 131, in find_template
+    template_name, skip=history,
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: base.html
+2018-05-21 15:43:35,874 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 148, in home
+    return render(request, 'api/home.html',{})
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 68, in render
+    reraise(exc, self.backend)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 154, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 151, in get_parent
+    return self.find_template(parent, context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 131, in find_template
+    template_name, skip=history,
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: base.html
+2018-05-21 15:44:01,430 [INFO] BULK operation initiated.
+
+2018-05-21 15:44:17,752 [INFO] BULK operation initiated.
+
+2018-05-21 15:44:33,255 [INFO] BULK operation initiated.
+
+2018-05-21 17:05:09,454 [INFO] BULK operation initiated.
+
+2018-05-21 19:44:14,766 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 148, in home
+    return render(request, 'api/home.html',{})
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+NoReverseMatch: Reverse for 'change_request_issue' not found. 'change_request_issue' is not a valid view function or pattern name.
+2018-05-21 19:44:36,364 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 148, in home
+    return render(request, 'api/home.html',{})
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+NoReverseMatch: Reverse for 'change_request_issue' not found. 'change_request_issue' is not a valid view function or pattern name.
+2018-05-21 20:56:08,692 [ERROR] Incomplete payload.
+
+2018-05-21 20:57:07,364 [ERROR] Incomplete payload.
+
+2018-05-21 20:57:38,998 [ERROR] Incomplete payload.
+
+2018-05-21 20:58:05,595 [INFO] BULK operation initiated.
+
+2018-05-21 20:59:42,121 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 99, in put
+    logger.error('Incomplete payload.')
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 99, in put
+    logger.error('Incomplete payload.')
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2018-05-21 21:00:12,158 [INFO] BULK operation initiated.
+
+2018-05-21 21:00:49,058 [INFO] BULK operation initiated.
+
+2018-05-21 21:01:40,035 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 91, in put
+    from_date = request.data.get('from_date', None)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 91, in put
+    from_date = request.data.get('from_date', None)
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2018-05-21 21:02:00,396 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 91, in put
+    from_date = request.data.get('from_date', None)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 91, in put
+    from_date = request.data.get('from_date', None)
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2018-05-21 21:02:23,262 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 93, in put
+    days = request.data.get('days', None)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 93, in put
+    days = request.data.get('days', None)
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2018-05-21 21:05:31,881 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 94, in put
+    room_type = request.data.get('room_type', None)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 94, in put
+    room_type = request.data.get('room_type', None)
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2018-05-21 21:05:36,386 [INFO] BULK operation initiated.
+
+2018-05-21 21:05:52,932 [INFO] BULK operation initiated.
+
+2018-05-21 21:06:24,694 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 114, in put
+    if from_date.isoweekday() in days:
+TypeError: coercing to Unicode: need string or buffer, int found
+2018-05-21 21:06:56,234 [INFO] BULK operation initiated.
+
+2018-05-21 21:07:37,093 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 114, in put
+    if from_date.isoweekday() in days:
+  File "/usr/lib/python2.7/bdb.py", line 55, in trace_dispatch
+    return self.dispatch_exception(frame, arg)
+  File "/usr/lib/python2.7/bdb.py", line 97, in dispatch_exception
+    if self.quitting: raise BdbQuit
+BdbQuit
+2018-05-21 21:07:50,571 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 113, in put
+    while from_date <= to_date:
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 113, in put
+    while from_date <= to_date:
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2018-05-21 21:08:42,068 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 113, in put
+    while from_date <= to_date:
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 113, in put
+    while from_date <= to_date:
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2018-05-21 21:10:09,144 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 113, in put
+    while from_date <= to_date:
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 113, in put
+    while from_date <= to_date:
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2018-05-21 21:11:23,028 [ERROR] Incomplete payload.
+
+2018-05-21 21:11:37,324 [INFO] BULK operation initiated.
+
+2018-05-21 21:12:13,900 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 91, in put
+    from_date = request.data.get('from_date', None)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 91, in put
+    from_date = request.data.get('from_date', None)
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2018-05-21 21:12:29,500 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 91, in put
+    from_date = request.data.get('from_date', None)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 91, in put
+    from_date = request.data.get('from_date', None)
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2018-05-21 21:12:53,533 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 91, in put
+    from_date = request.data.get('from_date', None)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 91, in put
+    from_date = request.data.get('from_date', None)
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2018-05-21 21:17:53,210 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 91, in put
+    from_date = request.data.get('from_date', None)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 91, in put
+    from_date = request.data.get('from_date', None)
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2018-05-21 21:23:07,639 [ERROR] Incomplete payload.
+
+2018-05-21 21:23:23,982 [INFO] BULK operation initiated.
+
+2018-05-21 21:23:27,356 [INFO] BULK operation initiated.
+
+2018-05-21 21:23:32,849 [INFO] BULK operation initiated.
+
+2018-05-21 21:23:32,867 [INFO] Update request initiated.
+
+2018-05-21 21:23:32,869 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-21 21:23:32,874 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:23:32,876 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-21 21:23:32,878 [INFO] Update request initiated.
+
+2018-05-21 21:23:32,880 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:23:32,880 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:23:32,882 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:23:32,884 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:23:32,884 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:23:32,885 [INFO] Update request initiated.
+
+2018-05-21 21:23:32,887 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:23:32,888 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:23:32,889 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:23:32,891 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:23:32,891 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:23:32,893 [INFO] Update request initiated.
+
+2018-05-21 21:23:32,897 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 2}
+
+2018-05-21 21:23:32,899 [INFO] Update request initiated.
+
+2018-05-21 21:23:32,901 [ERROR] {'date': [ErrorDetail(string=u'booking with this date already exists.', code=u'unique')]}
+
+2018-05-21 21:23:32,903 [INFO] Get request initiated.
+
+2018-05-21 21:23:32,904 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 2, 'doubleroomaval': 3}
+
+2018-05-21 21:23:32,906 [INFO] Update request initiated.
+
+2018-05-21 21:23:32,908 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-21 21:23:32,910 [INFO] Update request initiated.
+
+2018-05-21 21:23:32,912 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 3}
+
+2018-05-21 21:23:32,914 [INFO] Update request initiated.
+
+2018-05-21 21:23:32,916 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:23:32,916 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:23:32,918 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:23:32,919 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:23:32,919 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:23:32,922 [INFO] Update request initiated.
+
+2018-05-21 21:23:32,925 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:23:32,925 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:23:32,927 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:23:32,928 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:23:32,929 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:23:32,931 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:23:32,936 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 92, in put
+    days = request.data.getlist('days', None)
+AttributeError: 'dict' object has no attribute 'getlist'
+2018-05-21 21:23:32,943 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 92, in put
+    days = request.data.getlist('days', None)
+AttributeError: 'dict' object has no attribute 'getlist'
+2018-05-21 21:23:32,945 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 92, in put
+    days = request.data.getlist('days', None)
+AttributeError: 'dict' object has no attribute 'getlist'
+2018-05-21 21:23:32,946 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 92, in put
+    days = request.data.getlist('days', None)
+AttributeError: 'dict' object has no attribute 'getlist'
+2018-05-21 21:23:32,948 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 92, in put
+    days = request.data.getlist('days', None)
+AttributeError: 'dict' object has no attribute 'getlist'
+2018-05-21 21:23:32,949 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 92, in put
+    days = request.data.getlist('days', None)
+AttributeError: 'dict' object has no attribute 'getlist'
+2018-05-21 21:23:32,951 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 92, in put
+    days = request.data.getlist('days', None)
+AttributeError: 'dict' object has no attribute 'getlist'
+2018-05-21 21:23:32,961 [INFO] Creating an entry for price table.
+
+2018-05-21 21:23:32,963 [ERROR] {'booking': [ErrorDetail(string=u"'12-05-2018' value has an invalid date format. It must be in YYYY-MM-DD format.", code=u'invalid')]}
+
+2018-05-21 21:23:32,965 [INFO] UPDATE request initiated.
+
+2018-05-21 21:23:32,968 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-21 21:23:32,970 [INFO] UPDATE request initiated.
+
+2018-05-21 21:23:32,973 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-21 21:23:32,975 [INFO] Creating an entry for price table.
+
+2018-05-21 21:23:32,978 [ERROR] {'booking': [ErrorDetail(string=u'price with this booking already exists.', code=u'unique')]}
+
+2018-05-21 21:23:32,980 [INFO] GET request initiated.
+
+2018-05-21 21:23:32,981 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 800, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-21 21:23:32,983 [INFO] UPDATE request initiated.
+
+2018-05-21 21:23:32,986 [ERROR] Invalid price entered.
+
+2018-05-21 21:23:32,986 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:23:32,988 [INFO] Creating an entry for price table.
+
+2018-05-21 21:23:32,991 [ERROR] Invalid price entered.
+
+2018-05-21 21:23:32,991 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:23:32,993 [INFO] UPDATE request initiated.
+
+2018-05-21 21:23:32,996 [ERROR] Invalid price entered.
+
+2018-05-21 21:23:32,996 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:23:32,998 [INFO] Creating an entry for price table.
+
+2018-05-21 21:23:33,000 [ERROR] Invalid price entered.
+
+2018-05-21 21:23:33,000 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:23:33,002 [INFO] Creating an entry for price table.
+
+2018-05-21 21:23:33,006 [INFO] Request completed
+Request Status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 1500, 'booking': datetime.date(2018, 5, 19)}
+
+2018-05-21 21:26:51,085 [INFO] BULK operation initiated.
+
+2018-05-21 21:26:51,100 [INFO] Update request initiated.
+
+2018-05-21 21:26:51,102 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-21 21:26:51,107 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:26:51,108 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-21 21:26:51,110 [INFO] Update request initiated.
+
+2018-05-21 21:26:51,113 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:26:51,113 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:26:51,115 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:26:51,117 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:26:51,117 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:26:51,119 [INFO] Update request initiated.
+
+2018-05-21 21:26:51,121 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:26:51,121 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:26:51,123 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:26:51,125 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:26:51,125 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:26:51,127 [INFO] Update request initiated.
+
+2018-05-21 21:26:51,130 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 2}
+
+2018-05-21 21:26:51,132 [INFO] Update request initiated.
+
+2018-05-21 21:26:51,134 [ERROR] {'date': [ErrorDetail(string=u'booking with this date already exists.', code=u'unique')]}
+
+2018-05-21 21:26:51,136 [INFO] Get request initiated.
+
+2018-05-21 21:26:51,137 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 2, 'doubleroomaval': 3}
+
+2018-05-21 21:26:51,139 [INFO] Update request initiated.
+
+2018-05-21 21:26:51,141 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-21 21:26:51,143 [INFO] Update request initiated.
+
+2018-05-21 21:26:51,146 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 3}
+
+2018-05-21 21:26:51,147 [INFO] Update request initiated.
+
+2018-05-21 21:26:51,149 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:26:51,150 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:26:51,151 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:26:51,153 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:26:51,153 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:26:51,156 [INFO] Update request initiated.
+
+2018-05-21 21:26:51,158 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:26:51,159 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:26:51,160 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:26:51,162 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:26:51,162 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:26:51,164 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:26:52,495 [INFO] Bulk operation succeeded.
+
+2018-05-21 21:26:53,820 [INFO] Bulk operation succeeded.
+
+2018-05-21 21:26:53,831 [INFO] Creating an entry for price table.
+
+2018-05-21 21:26:53,833 [ERROR] {'booking': [ErrorDetail(string=u"'12-05-2018' value has an invalid date format. It must be in YYYY-MM-DD format.", code=u'invalid')]}
+
+2018-05-21 21:26:53,835 [INFO] UPDATE request initiated.
+
+2018-05-21 21:26:53,838 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-21 21:26:53,840 [INFO] UPDATE request initiated.
+
+2018-05-21 21:26:53,843 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-21 21:26:53,845 [INFO] Creating an entry for price table.
+
+2018-05-21 21:26:53,848 [ERROR] {'booking': [ErrorDetail(string=u'price with this booking already exists.', code=u'unique')]}
+
+2018-05-21 21:26:53,850 [INFO] GET request initiated.
+
+2018-05-21 21:26:53,852 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 800, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-21 21:26:53,854 [INFO] UPDATE request initiated.
+
+2018-05-21 21:26:53,856 [ERROR] Invalid price entered.
+
+2018-05-21 21:26:53,857 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:26:53,859 [INFO] Creating an entry for price table.
+
+2018-05-21 21:26:53,861 [ERROR] Invalid price entered.
+
+2018-05-21 21:26:53,861 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:26:53,863 [INFO] UPDATE request initiated.
+
+2018-05-21 21:26:53,866 [ERROR] Invalid price entered.
+
+2018-05-21 21:26:53,866 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:26:53,868 [INFO] Creating an entry for price table.
+
+2018-05-21 21:26:53,871 [ERROR] Invalid price entered.
+
+2018-05-21 21:26:53,871 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:26:53,873 [INFO] Creating an entry for price table.
+
+2018-05-21 21:26:53,876 [INFO] Request completed
+Request Status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 1500, 'booking': datetime.date(2018, 5, 19)}
+
+2018-05-21 21:26:56,538 [INFO] BULK operation initiated.
+
+2018-05-21 21:27:06,039 [ERROR] Incomplete payload.
+
+2018-05-21 21:27:16,128 [INFO] BULK operation initiated.
+
+2018-05-21 21:27:34,319 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 91, in put
+    from_date = request.data.get('from_date', None)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 91, in put
+    from_date = request.data.get('from_date', None)
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2018-05-21 21:27:41,857 [INFO] BULK operation initiated.
+
+2018-05-21 21:27:56,103 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 114, in put
+    if from_date.isoweekday() in days:
+TypeError: coercing to Unicode: need string or buffer, int found
+2018-05-21 21:28:05,517 [INFO] BULK operation initiated.
+
+2018-05-21 21:28:08,380 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 112, in put
+    import pdb ; pdb.set_trace()
+NameError: global name 'pdb' is not defined
+2018-05-21 21:28:18,918 [INFO] BULK operation initiated.
+
+2018-05-21 21:28:25,250 [INFO] BULK operation initiated.
+
+2018-05-21 21:30:32,099 [INFO] BULK operation initiated.
+
+2018-05-21 21:30:41,105 [INFO] BULK operation initiated.
+
+2018-05-21 21:30:41,143 [INFO] Update request initiated.
+
+2018-05-21 21:30:41,147 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-21 21:30:41,159 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:30:41,162 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-21 21:30:41,165 [INFO] Update request initiated.
+
+2018-05-21 21:30:41,170 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:30:41,170 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:30:41,173 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:30:41,175 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:30:41,175 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:30:41,178 [INFO] Update request initiated.
+
+2018-05-21 21:30:41,181 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:30:41,181 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:30:41,183 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:30:41,185 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:30:41,186 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:30:41,188 [INFO] Update request initiated.
+
+2018-05-21 21:30:41,192 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 2}
+
+2018-05-21 21:30:41,194 [INFO] Update request initiated.
+
+2018-05-21 21:30:41,196 [ERROR] {'date': [ErrorDetail(string=u'booking with this date already exists.', code=u'unique')]}
+
+2018-05-21 21:30:41,199 [INFO] Get request initiated.
+
+2018-05-21 21:30:41,200 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 2, 'doubleroomaval': 3}
+
+2018-05-21 21:30:41,202 [INFO] Update request initiated.
+
+2018-05-21 21:30:41,205 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-21 21:30:41,207 [INFO] Update request initiated.
+
+2018-05-21 21:30:41,210 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 3}
+
+2018-05-21 21:30:41,212 [INFO] Update request initiated.
+
+2018-05-21 21:30:41,214 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:30:41,214 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:30:41,216 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:30:41,218 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:30:41,219 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:30:41,222 [INFO] Update request initiated.
+
+2018-05-21 21:30:41,224 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:30:41,225 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:30:41,227 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:30:41,229 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:30:41,229 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:30:41,231 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:30:42,984 [ERROR] Internal Server Error: /bulk/
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 113, in put
+    while from_date <= to_date:
+  File "/home/anupam/github/wingify/wingify/api/views.py", line 113, in put
+    while from_date <= to_date:
+  File "/usr/lib/python2.7/bdb.py", line 49, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python2.7/bdb.py", line 68, in dispatch_line
+    if self.quitting: raise BdbQuit
+BdbQuit
+2018-05-21 21:30:53,520 [INFO] BULK operation initiated.
+
+2018-05-21 21:30:53,535 [INFO] Update request initiated.
+
+2018-05-21 21:30:53,537 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-21 21:30:53,542 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:30:53,544 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-21 21:30:53,547 [INFO] Update request initiated.
+
+2018-05-21 21:30:53,549 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:30:53,549 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:30:53,551 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:30:53,553 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:30:53,554 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:30:53,556 [INFO] Update request initiated.
+
+2018-05-21 21:30:53,558 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:30:53,558 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:30:53,560 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:30:53,562 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:30:53,562 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:30:53,564 [INFO] Update request initiated.
+
+2018-05-21 21:30:53,568 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 2}
+
+2018-05-21 21:30:53,570 [INFO] Update request initiated.
+
+2018-05-21 21:30:53,572 [ERROR] {'date': [ErrorDetail(string=u'booking with this date already exists.', code=u'unique')]}
+
+2018-05-21 21:30:53,575 [INFO] Get request initiated.
+
+2018-05-21 21:30:53,576 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 2, 'doubleroomaval': 3}
+
+2018-05-21 21:30:53,579 [INFO] Update request initiated.
+
+2018-05-21 21:30:53,581 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-21 21:30:53,583 [INFO] Update request initiated.
+
+2018-05-21 21:30:53,586 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 3}
+
+2018-05-21 21:30:53,588 [INFO] Update request initiated.
+
+2018-05-21 21:30:53,590 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:30:53,590 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:30:53,592 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:30:53,594 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:30:53,595 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:30:53,598 [INFO] Update request initiated.
+
+2018-05-21 21:30:53,600 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:30:53,600 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:30:53,602 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:30:53,604 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:30:53,604 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:30:53,606 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:30:53,616 [INFO] Bulk operation succeeded.
+
+2018-05-21 21:30:53,620 [INFO] Bulk operation succeeded.
+
+2018-05-21 21:30:53,632 [INFO] Creating an entry for price table.
+
+2018-05-21 21:30:53,633 [ERROR] {'booking': [ErrorDetail(string=u"'12-05-2018' value has an invalid date format. It must be in YYYY-MM-DD format.", code=u'invalid')]}
+
+2018-05-21 21:30:53,636 [INFO] UPDATE request initiated.
+
+2018-05-21 21:30:53,639 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-21 21:30:53,642 [INFO] UPDATE request initiated.
+
+2018-05-21 21:30:53,645 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-21 21:30:53,648 [INFO] Creating an entry for price table.
+
+2018-05-21 21:30:53,651 [ERROR] {'booking': [ErrorDetail(string=u'price with this booking already exists.', code=u'unique')]}
+
+2018-05-21 21:30:53,653 [INFO] GET request initiated.
+
+2018-05-21 21:30:53,655 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 800, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-21 21:30:53,657 [INFO] UPDATE request initiated.
+
+2018-05-21 21:30:53,661 [ERROR] Invalid price entered.
+
+2018-05-21 21:30:53,661 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:30:53,663 [INFO] Creating an entry for price table.
+
+2018-05-21 21:30:53,666 [ERROR] Invalid price entered.
+
+2018-05-21 21:30:53,666 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:30:53,669 [INFO] UPDATE request initiated.
+
+2018-05-21 21:30:53,672 [ERROR] Invalid price entered.
+
+2018-05-21 21:30:53,673 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:30:53,675 [INFO] Creating an entry for price table.
+
+2018-05-21 21:30:53,678 [ERROR] Invalid price entered.
+
+2018-05-21 21:30:53,678 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:30:53,680 [INFO] Creating an entry for price table.
+
+2018-05-21 21:30:53,684 [INFO] Request completed
+Request Status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 1500, 'booking': datetime.date(2018, 5, 19)}
+
+2018-05-21 21:31:06,906 [INFO] BULK operation initiated.
+
+2018-05-21 21:31:06,921 [INFO] Update request initiated.
+
+2018-05-21 21:31:06,923 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-21 21:31:06,928 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:31:06,930 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-21 21:31:06,932 [INFO] Update request initiated.
+
+2018-05-21 21:31:06,935 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:31:06,935 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:31:06,937 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:31:06,938 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:31:06,939 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:31:06,940 [INFO] Update request initiated.
+
+2018-05-21 21:31:06,943 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:31:06,943 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:31:06,945 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:31:06,947 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:31:06,947 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:31:06,949 [INFO] Update request initiated.
+
+2018-05-21 21:31:06,952 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 2}
+
+2018-05-21 21:31:06,954 [INFO] Update request initiated.
+
+2018-05-21 21:31:06,956 [ERROR] {'date': [ErrorDetail(string=u'booking with this date already exists.', code=u'unique')]}
+
+2018-05-21 21:31:06,958 [INFO] Get request initiated.
+
+2018-05-21 21:31:06,959 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 2, 'doubleroomaval': 3}
+
+2018-05-21 21:31:06,961 [INFO] Update request initiated.
+
+2018-05-21 21:31:06,963 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-21 21:31:06,964 [INFO] Update request initiated.
+
+2018-05-21 21:31:06,967 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 3}
+
+2018-05-21 21:31:06,969 [INFO] Update request initiated.
+
+2018-05-21 21:31:06,971 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:31:06,971 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:31:06,973 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:31:06,975 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:31:06,975 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:31:06,978 [INFO] Update request initiated.
+
+2018-05-21 21:31:06,980 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:31:06,980 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:31:06,982 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:31:06,984 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:31:06,984 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:31:06,986 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:31:06,996 [INFO] Bulk operation succeeded.
+
+2018-05-21 21:31:07,000 [INFO] Bulk operation succeeded.
+
+2018-05-21 21:31:07,010 [INFO] Creating an entry for price table.
+
+2018-05-21 21:31:07,012 [ERROR] {'booking': [ErrorDetail(string=u"'12-05-2018' value has an invalid date format. It must be in YYYY-MM-DD format.", code=u'invalid')]}
+
+2018-05-21 21:31:07,015 [INFO] UPDATE request initiated.
+
+2018-05-21 21:31:07,018 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-21 21:31:07,020 [INFO] UPDATE request initiated.
+
+2018-05-21 21:31:07,023 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-21 21:31:07,025 [INFO] Creating an entry for price table.
+
+2018-05-21 21:31:07,028 [ERROR] {'booking': [ErrorDetail(string=u'price with this booking already exists.', code=u'unique')]}
+
+2018-05-21 21:31:07,030 [INFO] GET request initiated.
+
+2018-05-21 21:31:07,031 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 800, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-21 21:31:07,033 [INFO] UPDATE request initiated.
+
+2018-05-21 21:31:07,036 [ERROR] Invalid price entered.
+
+2018-05-21 21:31:07,036 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:31:07,038 [INFO] Creating an entry for price table.
+
+2018-05-21 21:31:07,041 [ERROR] Invalid price entered.
+
+2018-05-21 21:31:07,041 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:31:07,043 [INFO] UPDATE request initiated.
+
+2018-05-21 21:31:07,046 [ERROR] Invalid price entered.
+
+2018-05-21 21:31:07,046 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:31:07,048 [INFO] Creating an entry for price table.
+
+2018-05-21 21:31:07,051 [ERROR] Invalid price entered.
+
+2018-05-21 21:31:07,052 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:31:07,054 [INFO] Creating an entry for price table.
+
+2018-05-21 21:31:07,056 [INFO] Request completed
+Request Status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 1500, 'booking': datetime.date(2018, 5, 19)}
+
+2018-05-21 21:32:02,709 [INFO] BULK operation initiated.
+
+2018-05-21 21:32:02,724 [INFO] Update request initiated.
+
+2018-05-21 21:32:02,726 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-21 21:32:02,731 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:32:02,733 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-21 21:32:02,735 [INFO] Update request initiated.
+
+2018-05-21 21:32:02,737 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:32:02,737 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:32:02,739 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:32:02,741 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:32:02,741 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:32:02,743 [INFO] Update request initiated.
+
+2018-05-21 21:32:02,745 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:32:02,746 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:32:02,747 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:32:02,749 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:32:02,749 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:32:02,751 [INFO] Update request initiated.
+
+2018-05-21 21:32:02,755 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 2}
+
+2018-05-21 21:32:02,757 [INFO] Update request initiated.
+
+2018-05-21 21:32:02,759 [ERROR] {'date': [ErrorDetail(string=u'booking with this date already exists.', code=u'unique')]}
+
+2018-05-21 21:32:02,761 [INFO] Get request initiated.
+
+2018-05-21 21:32:02,762 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 2, 'doubleroomaval': 3}
+
+2018-05-21 21:32:02,764 [INFO] Update request initiated.
+
+2018-05-21 21:32:02,766 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-21 21:32:02,768 [INFO] Update request initiated.
+
+2018-05-21 21:32:02,771 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 3}
+
+2018-05-21 21:32:02,773 [INFO] Update request initiated.
+
+2018-05-21 21:32:02,775 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:32:02,775 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:32:02,777 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:32:02,778 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:32:02,779 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:32:02,782 [INFO] Update request initiated.
+
+2018-05-21 21:32:02,784 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:32:02,784 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:32:02,786 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:32:02,788 [ERROR] Wrong room availability entered.
+
+2018-05-21 21:32:02,788 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-21 21:32:02,790 [INFO] Creating an entry in Booking table
+
+2018-05-21 21:32:04,182 [INFO] Bulk operation succeeded.
+
+2018-05-21 21:32:05,488 [INFO] Bulk operation succeeded.
+
+2018-05-21 21:32:05,499 [INFO] Creating an entry for price table.
+
+2018-05-21 21:32:05,501 [ERROR] {'booking': [ErrorDetail(string=u"'12-05-2018' value has an invalid date format. It must be in YYYY-MM-DD format.", code=u'invalid')]}
+
+2018-05-21 21:32:05,503 [INFO] UPDATE request initiated.
+
+2018-05-21 21:32:05,506 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-21 21:32:05,509 [INFO] UPDATE request initiated.
+
+2018-05-21 21:32:05,511 [ERROR] Tried changing booking date. Can't change booking date.
+
+2018-05-21 21:32:05,514 [INFO] Creating an entry for price table.
+
+2018-05-21 21:32:05,516 [ERROR] {'booking': [ErrorDetail(string=u'price with this booking already exists.', code=u'unique')]}
+
+2018-05-21 21:32:05,518 [INFO] GET request initiated.
+
+2018-05-21 21:32:05,520 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 800, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-21 21:32:05,522 [INFO] UPDATE request initiated.
+
+2018-05-21 21:32:05,525 [ERROR] Invalid price entered.
+
+2018-05-21 21:32:05,525 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:32:05,527 [INFO] Creating an entry for price table.
+
+2018-05-21 21:32:05,529 [ERROR] Invalid price entered.
+
+2018-05-21 21:32:05,530 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:32:05,532 [INFO] UPDATE request initiated.
+
+2018-05-21 21:32:05,535 [ERROR] Invalid price entered.
+
+2018-05-21 21:32:05,535 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:32:05,537 [INFO] Creating an entry for price table.
+
+2018-05-21 21:32:05,540 [ERROR] Invalid price entered.
+
+2018-05-21 21:32:05,540 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-21 21:32:05,542 [INFO] Creating an entry for price table.
+
+2018-05-21 21:32:05,545 [INFO] Request completed
+Request Status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 1500, 'booking': datetime.date(2018, 5, 19)}
+
+2018-05-21 21:32:25,933 [INFO] BULK operation initiated.
+
+2018-05-21 21:33:05,270 [INFO] Bulk operation succeeded.
+
+2018-05-21 21:33:13,384 [WARNING] Not Found: /favicon.ico
+

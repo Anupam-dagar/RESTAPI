@@ -370,7 +370,7 @@ class BulkOperationTest(TestCase):
         self.double_valid_payload = {
             "from_date": "2015-10-10",
             "to_date": "2016-10-10",
-            "days": [1, 2, 3, 4, 5, 6, 7],
+            "days": ["1", "2", "3", "4", "5", "6", "7"],
             "room_type": "double",
             "price": 1199,
             "availability": 3
@@ -378,7 +378,7 @@ class BulkOperationTest(TestCase):
         self.single_valid_payload = {
             "from_date": "2015-10-10",
             "to_date": "2016-10-10",
-            "days": [1, 2, 3, 4, 5, 6, 7],
+            "days": ["1", "2", "3", "4", "5", "6", "7"],
             "room_type": "single",
             "price": 1199,
             "availability": 3
@@ -386,7 +386,7 @@ class BulkOperationTest(TestCase):
         self.from_date_invalid_payload = {
             "from_date": "10-10-2015",
             "to_date": "2016-10-10",
-            "days": [1, 2, 3, 4, 5, 6, 7],
+            "days": ["1", "2", "3", "4", "5", "6", "7"],
             "room_type": "single",
             "price": 1199,
             "availability": 3
@@ -394,7 +394,7 @@ class BulkOperationTest(TestCase):
         self.to_date_invalid_payload = {
             "from_date": "2015-10-10",
             "to_date": "10-10-2016",
-            "days": [1, 2, 3, 4, 5, 6, 7],
+            "days": ["1", "2", "3", "4", "5", "6", "7"],
             "room_type": "single",
             "price": 1199,
             "availability": 3
@@ -402,7 +402,7 @@ class BulkOperationTest(TestCase):
         self.price_invalid_payload = {
             "from_date": "2015-10-10",
             "to_date": "10-10-2016",
-            "days": [1, 2, 3, 4, 5, 6, 7],
+            "days": ["1", "2", "3", "4", "5", "6", "7"],
             "room_type": "single",
             "price": -1,
             "availability": 3
@@ -410,7 +410,7 @@ class BulkOperationTest(TestCase):
         self.aval_invalid_payload = {
             "from_date": "2015-10-10",
             "to_date": "10-10-2016",
-            "days": [1, 2, 3, 4, 5, 6, 7],
+            "days": ["1", "2", "3", "4", "5", "6", "7"],
             "room_type": "single",
             "price": 1199,
             "availability": 6
@@ -418,7 +418,7 @@ class BulkOperationTest(TestCase):
         self.aval_neg_invalid_payload = {
             "from_date": "2015-10-10",
             "to_date": "10-10-2016",
-            "days": [1, 2, 3, 4, 5, 6, 7],
+            "days": ["1", "2", "3", "4", "5", "6", "7"],
             "room_type": "single",
             "price": 1199,
             "availability": -1
