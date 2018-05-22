@@ -12,15 +12,6 @@ import logging
 logger = logging.getLogger('django')
 
 class BookingApi(APIView):
-    def post(self, request, format=None):
-        logger.info('Creating an entry in Booking table')
-        serializer = BookingSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        logger.error(serializer.errors)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
     def get(self, request, datebooking, format=None):
         logger.info('Get request initiated.')
         try:
@@ -35,12 +26,14 @@ class BookingApi(APIView):
 
     def put(self, request, datebooking, format=None):
         logger.info('Update request initiated.')
-        booking = Booking.objects.get(date=datebooking)
-        bserializer = BookingSerializer(booking, data=request.data, partial=True)
+        request_data = request.data.copy()
+        request_data['date'] = datebooking
+        try:
+            booking = Booking.objects.get(date=datebooking)
+            bserializer = BookingSerializer(booking, data=request_data, partial=True)
+        except:
+            bserializer = BookingSerializer(data=request_data)
         if bserializer.is_valid():
-            if datebooking != request.data.get('date', datebooking):
-                logger.error('Tried changing booking date. Can\'t change booking date.')
-                return Response({'success': False, 'message': 'Can\'t change booking date'}, status=status.HTTP_400_BAD_REQUEST)
             bserializer.save()
             logger.info('Request completed\nRequest status code: 200\nData: ' + str(bserializer.data))
             return Response(bserializer.data, status=status.HTTP_200_OK)
@@ -48,16 +41,6 @@ class BookingApi(APIView):
         return Response(bserializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class PriceApi(APIView):
-    def post(self, request, format=None):
-        logger.info('Creating an entry for price table.')
-        serializer = PriceSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            logger.info('Request completed\nRequest Status code: 200\nData: ' + str(serializer.data))
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        logger.error(serializer.errors)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-        
     def get(self, request, datebooking, format=None):
         logger.info('GET request initiated.')
         try:
@@ -72,12 +55,14 @@ class PriceApi(APIView):
 
     def put(self, request, datebooking, format=None):
         logger.info('UPDATE request initiated.')
-        price = Price.objects.get(booking__date=datebooking)
-        pserializer = PriceSerializer(price, data=request.data, partial=True)
+        request_data = request.data.copy()
+        request_data['booking'] = datebooking
+        try:
+            price = Price.objects.get(booking__date=datebooking)
+            pserializer = PriceSerializer(price, data=request_data, partial=True)
+        except:
+            pserializer = PriceSerializer(data=request_data)            
         if pserializer.is_valid():
-            if datebooking != request.data.get('booking', datebooking):
-                logger.error('Tried changing booking date. Can\'t change booking date.')
-                return Response({'success': False, 'message': 'Can\'t change booking date'}, status=status.HTTP_400_BAD_REQUEST)
             pserializer.save()
             logger.info('Request completed\nRequest status code: 200\nData: ' + str(pserializer.data))
             return Response(pserializer.data, status=status.HTTP_200_OK)
@@ -85,8 +70,8 @@ class PriceApi(APIView):
         return Response(pserializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class BulkOperationsApi(APIView):
-    logger.info('BULK operation initiated.')
     def put(self, request, format=None):
+        logger.info('BULK operation initiated.')
         from_date = request.data.get('from_date', None)
         to_date = request.data.get('to_date', None)
         days = request.data.get('days', None) 

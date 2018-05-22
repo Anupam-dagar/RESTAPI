@@ -19,79 +19,120 @@
 <div class="container">
 
     <!-- Main component for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div class="jumbotron container-fluid">
         <h3>Bulk Operations</h3>
         <hr>
         <form method="" class="form-horizontal" id="bulk">
-            <div class="form-group">
-                <label for="roomtypes" class="col-sm-2 control-label">Select Room</label>
-                <div class="col-sm-2">
-                    <select class="form-control" id="roomtypes">
-                        <option value="single">Single Room</option>
-                        <option value="double">Double Room</option>
-                    </select>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="roomtypes" class="col-md-5 control-label">Select Room</label>
+                    <div class="col-md-6">
+                        <select class="form-control" id="roomtypes">
+                            <option value="single">Single Room</option>
+                            <option value="double">Double Room</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <label for="timeperiod" class="col-sm-2 control-label">Select Days</label>
-                <div class="row" id="timeperiod">
-                    <div class="col-sm-2">
+                <div class="form-group">
+                    <label for="timeperiod" class="col-md-5 control-label">Select Days</label>
+                    <div class="col-md-6">
                         <input type="text" name="" class="form-control" id="fromdate" placeholder="From Date">
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-md-6 col-md-offset-5">
                         <input type="text" name="" class="form-control" id="todate" placeholder="To Date">
                     </div>
                 </div>
             </div>
-            <div class="form-group">
-                <h4>Refine days</h4>
-                <div class="checkbox col-sm-2">
-                    <input type="checkbox" name="days" value="1"> Monday
-                </div>
-                <div class="checkbox col-sm-2">
-                    <input type="checkbox" name="days" value="2"> Tuesday
-                </div>
-                <div class="checkbox col-sm-2">
-                    <input type="checkbox" name="days" value="3"> Wednesday
-                </div>
-                <div class="checkbox col-sm-2">
-                    <input type="checkbox" name="days" value="4"> Thursday
-                </div>
-                <div class="checkbox col-sm-2">
-                    <input type="checkbox" name="days" value="5"> Friday
-                </div>
-                <div class="checkbox col-sm-2">
-                    <input type="checkbox" name="days" value="6"> Saturday
-                </div>
-                <div class="checkbox col-sm-2">
-                    <input type="checkbox" name="days" value="7"> Sunday
-                </div>
-                <div class="checkbox col-sm-2">
-                    <input type="checkbox" name="days" value="[1,2,3,4,5,6,7]"> All days
-                </div>
-                <div class="checkbox col-sm-2">
-                    <input type="checkbox" name="days" value="[1,2,3,4,5]"> All weekdays
-                </div>
-                <div class="checkbox col-sm-2">
-                    <input type="checkbox" name="days" value="[6,7]"> All weekends
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="price" class="col-sm-2 control-label">Change price to</label>
-                <div class="col-sm-2">
-                    <input type="text" name="" class="form-control" id="price" value="" placeholder="Price">
+            <div class="col-md-8">
+                <div class="form-group">
+                    <h4>Refine days</h4>
+                    <div class="checkbox col-md-3">
+                        <input type="checkbox" name="days" value="1"> Monday
+                    </div>
+                    <div class="checkbox col-md-3">
+                        <input type="checkbox" name="days" value="2"> Tuesday
+                    </div>
+                    <div class="checkbox col-md-3">
+                        <input type="checkbox" name="days" value="3"> Wednesday
+                    </div>
+                    <div class="checkbox col-md-3">
+                        <input type="checkbox" name="days" value="4"> Thursday
+                    </div>
+                    <div class="checkbox col-md-3">
+                        <input type="checkbox" name="days" value="5"> Friday
+                    </div>
+                    <div class="checkbox col-md-3">
+                        <input type="checkbox" name="days" value="6"> Saturday
+                    </div>
+                    <div class="checkbox col-md-3">
+                        <input type="checkbox" name="days" value="7"> Sunday
+                    </div>
+                    <div class="checkbox col-md-3">
+                        <input type="checkbox" name="days" value="[1,2,3,4,5,6,7]"> All days
+                    </div>
+                    <div class="checkbox col-md-3">
+                        <input type="checkbox" name="days" value="[1,2,3,4,5]"> All weekdays
+                    </div>
+                    <div class="checkbox col-md-3">
+                        <input type="checkbox" name="days" value="[6,7]"> All weekends
+                    </div>
                 </div>
             </div>
-            <div class="form-group">
-                <label for="aval" class="col-sm-2 control-label">Change availability to</label>
-                <div class="col-sm-2">
-                    <input type="text" name="" class="form-control" id="aval" value="" placeholder="Availability">
+            <div class="col-md-6" style="margin-top:2vw;">
+                <div class="form-group">
+                    <label for="price" class="col-md-5 control-label" style="text-align:left;">Change price to</label>
+                    <div class="col-md-4">
+                        <input type="text" name="" class="form-control" id="price" value="" placeholder="Price">
+                    </div>
                 </div>
+                <div class="form-group">
+                    <label for="aval" class="col-md-5 control-label" style="text-align:left;">Change availability to</label>
+                    <div class="col-md-4">
+                        <input type="text" name="" class="form-control" id="aval" value="" placeholder="Availability">
+                    </div>
+                </div>
+                <button type="submit" id="submit" class="btn btn-success">Update</button>
             </div>
-            <button type="submit" id="submit" class="btn btn-primary">Update</button>
         </form>
     </div>
-
+    <div class="jumbotron container-fluid">
+        <h3>Single date operation</h3>
+        <hr>
+        <form action="" class="form-inline" id="singledate">
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <label for="date" class="control-label" style="text-align:center;">Date</label>
+                    </div>
+                    <div class="col-md-4 col-md-offset-1">
+                        <input type="text" class="form-control" id="date" placeholder="YYYY-MM-DD">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:2vw;">
+                <div class="form-group">
+                    <label for="singleaval" class="col-md-4 control-label">Single Room Availability</label>
+                    <input type="text" class="form-control" id="singleaval" placeholder="0-5">
+                </div>
+                <div class="form-group col-md-offset-1">
+                    <label for="doubleaval" class="col-md-4 control-label">Double Room Availability</label>
+                    <input type="text" class="form-control" id="doubleaval" placeholder="0-5">
+                </div>
+                <button type="submit" class="btn btn-success" id="updateaval">Update Availability</button>
+            </div>
+            <div class="row" style="margin-top:2vw;">
+                <div class="form-group">
+                    <label for="singleprice" class="col-md-4 control-label">Single Room Price</label>
+                    <input type="text" class="form-control" id="singleaval" placeholder="Single Room Price">
+                </div>
+                <div class="form-group col-md-offset-1">
+                    <label for="doubleprice" class="col-md-4 control-label">Double Room Price</label>
+                    <input type="text" class="form-control" id="singleaval" placeholder="Double Room Price">
+                </div>
+                <button type="submit" class="btn btn-success" id="updateprice">Update Price</button>
+            </div>
+        </form>
+    </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
@@ -108,52 +149,55 @@
             days.push(this.value);
         });
         var data = {};
-        data ["from_date"] = from_date;
-        data ["to_date"] = to_date;
-        data ["days"] = JSON.stringify(days);
-        data ["room_type"] = room_type;
-        data ["price"] = price;
-        data ["availability"] = aval;
-        data ["csrfmiddlewaretoken"] = '{{ csrf_token }}';
+        data["from_date"] = from_date;
+        data["to_date"] = to_date;
+        data["days"] = JSON.stringify(days);
+        data["room_type"] = room_type;
+        data["price"] = price;
+        data["availability"] = aval;
+        data["csrfmiddlewaretoken"] = '{{ csrf_token }}';
         event.preventDefault();
         $.ajaxSetup({
             headers: { "X-CSRFToken": '{{csrf_token}}' }
-          });
+        });
         $.ajax({
             type: "PUT",
             url: "/bulk/",
             data: data,
             success: function () {
-                alert("Saved! It worked.");
+                alert("Bulk operation successfully completed.");
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 alert("some error " + String(errorThrown) + String(textStatus) + String(XMLHttpRequest.responseText));
             }
         });
     });
-    {% comment %} $(".request_issue").change(function (e) {
-        var form = $(this).parent().parent().parent();
-        console.log(form);
-        request_val = $(this).val();
-        bookid = $(this).parent().parent().siblings("input").next().next().val();
-        usermail = $(this).parent().parent().siblings("input").next().next().next().val()
-        e.preventDefault();
+    // -----------------------------------------//
+    $("#updateaval").click(function (event) {
+        var date = $('#date').val();
+        var singleaval = $('#singleaval').val();
+        var doubleaval = $('#doubleaval').val();
+        var data = {};
+        data["date"] = date;
+        data["singleroomaval"] = singleaval;
+        data["doubleroomaval"] = doubleaval;
+        data["csrfmiddlewaretoken"] = '{{ csrf_token }}';
+        event.preventDefault();
+        $.ajaxSetup({
+            headers: { "X-CSRFToken": '{{csrf_token}}' }
+        });
         $.ajax({
-            url: '{% url "change_request_issue" %}',
-            data: {
-                'request_val': request_val,
-                'bookid': bookid,
-                'usermail': usermail
+            type: "POST",
+            url: "/bulk/",
+            data: data,
+            success: function () {
+                alert("Bulk operation successfully completed.");
             },
-            dataType: 'json',
-            success: function (data) {
-                if (data.valdb) {
-                    console.log("Issue request has been sent");
-                    form.submit();
-                }
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("some error " + String(errorThrown) + String(textStatus) + String(XMLHttpRequest.responseText));
             }
         });
-    }); {% endcomment %}
+    });
 </script>
 <!-- /container -->
 {% endblock content %}
