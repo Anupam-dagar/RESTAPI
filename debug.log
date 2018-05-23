@@ -4792,3 +4792,520 @@ Data: {'pricesingle': 800, 'pricedouble': 900, 'booking': datetime.date(2018, 5,
 Request status code: 200
 Data: {'pricesingle': 1000, 'pricedouble': 1500, 'booking': datetime.date(2018, 5, 19)}
 
+2018-05-23 13:14:35,681 [INFO] Update request initiated.
+
+2018-05-23 13:14:35,683 [ERROR] {'date': [ErrorDetail(string=u'Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]].', code=u'invalid')]}
+
+2018-05-23 13:14:35,689 [INFO] Update request initiated.
+
+2018-05-23 13:14:35,691 [ERROR] Wrong room availability entered.
+
+2018-05-23 13:14:35,692 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-23 13:14:35,693 [INFO] Update request initiated.
+
+2018-05-23 13:14:35,695 [ERROR] Wrong room availability entered.
+
+2018-05-23 13:14:35,696 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-23 13:14:35,697 [INFO] Update request initiated.
+
+2018-05-23 13:14:35,701 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 2}
+
+2018-05-23 13:14:35,703 [INFO] Get request initiated.
+
+2018-05-23 13:14:35,705 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 2, 'doubleroomaval': 3}
+
+2018-05-23 13:14:35,706 [INFO] Update request initiated.
+
+2018-05-23 13:14:35,710 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-05-20', 'singleroomaval': 1, 'doubleroomaval': 3}
+
+2018-05-23 13:14:35,711 [INFO] Update request initiated.
+
+2018-05-23 13:14:35,714 [ERROR] Wrong room availability entered.
+
+2018-05-23 13:14:35,714 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-23 13:14:35,716 [INFO] Update request initiated.
+
+2018-05-23 13:14:35,718 [ERROR] Wrong room availability entered.
+
+2018-05-23 13:14:35,719 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Room availability must be between 0 or 5', code=u'invalid')]}
+
+2018-05-23 13:14:35,720 [INFO] Update request initiated.
+
+2018-05-23 13:14:35,722 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2018-04-18', 'singleroomaval': 4, 'doubleroomaval': 2}
+
+2018-05-23 13:14:35,725 [INFO] BULK operation initiated.
+
+2018-05-23 13:14:35,728 [INFO] BULK operation initiated.
+
+2018-05-23 13:14:35,730 [INFO] BULK operation initiated.
+
+2018-05-23 13:14:37,033 [INFO] Bulk operation succeeded.
+
+2018-05-23 13:14:37,035 [INFO] BULK operation initiated.
+
+2018-05-23 13:14:37,036 [INFO] BULK operation initiated.
+
+2018-05-23 13:14:37,038 [INFO] BULK operation initiated.
+
+2018-05-23 13:14:38,324 [INFO] Bulk operation succeeded.
+
+2018-05-23 13:14:38,326 [INFO] BULK operation initiated.
+
+2018-05-23 13:14:38,336 [INFO] UPDATE request initiated.
+
+2018-05-23 13:14:38,338 [ERROR] {'booking': [ErrorDetail(string=u"'12-05-2018' value has an invalid date format. It must be in YYYY-MM-DD format.", code=u'invalid')]}
+
+2018-05-23 13:14:38,340 [INFO] UPDATE request initiated.
+
+2018-05-23 13:14:38,344 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-23 13:14:38,347 [INFO] GET request initiated.
+
+2018-05-23 13:14:38,348 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 800, 'pricedouble': 900, 'booking': datetime.date(2018, 5, 20)}
+
+2018-05-23 13:14:38,350 [INFO] UPDATE request initiated.
+
+2018-05-23 13:14:38,354 [ERROR] Invalid price entered.
+
+2018-05-23 13:14:38,354 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-23 13:14:38,356 [INFO] UPDATE request initiated.
+
+2018-05-23 13:14:38,359 [ERROR] Invalid price entered.
+
+2018-05-23 13:14:38,359 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-23 13:14:38,361 [INFO] UPDATE request initiated.
+
+2018-05-23 13:14:38,365 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1000, 'pricedouble': 1500, 'booking': datetime.date(2018, 5, 19)}
+
+2018-05-23 13:41:15,106 [ERROR] Internal Server Error: /updateroomdata/2086-11-11
+Traceback (most recent call last):
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/utils/deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/middleware/common.py", line 63, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/anupam/github/wingify/myvenv/local/lib/python2.7/site-packages/django/middleware/common.py", line 101, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/updateroomdata/2086-11-11/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2018-05-23 13:41:40,543 [INFO] Update request initiated.
+
+2018-05-23 13:41:40,580 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2081-11-11', 'singleroomaval': 3, 'doubleroomaval': 1}
+
+2018-05-23 13:41:47,463 [WARNING] Not Found: /favicon.ico
+
+2018-05-23 13:49:51,633 [INFO] Update request initiated.
+
+2018-05-23 13:49:51,667 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2081-11-11', 'singleroomaval': 3, 'doubleroomaval': 1}
+
+2018-05-23 13:50:44,139 [WARNING] Not Found: /favicon.ico
+
+2018-05-23 13:51:35,830 [INFO] Update request initiated.
+
+2018-05-23 13:51:35,866 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2081-11-11', 'singleroomaval': 3, 'doubleroomaval': 1}
+
+2018-05-23 13:51:40,621 [WARNING] Not Found: /favicon.ico
+
+2018-05-23 13:52:19,765 [INFO] UPDATE request initiated.
+
+2018-05-23 13:52:19,824 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 3, 'pricedouble': 4, 'booking': datetime.date(2081, 11, 11)}
+
+2018-05-23 14:48:10,827 [WARNING] Not Found: /favicon.ico
+
+2018-05-23 14:48:48,186 [INFO] BULK operation initiated.
+
+2018-05-23 14:48:59,502 [INFO] Bulk operation succeeded.
+
+2018-05-23 14:49:24,695 [INFO] BULK operation initiated.
+
+2018-05-23 14:49:36,242 [INFO] Bulk operation succeeded.
+
+2018-05-23 14:50:27,628 [INFO] UPDATE request initiated.
+
+2018-05-23 14:50:27,691 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 3, 'pricedouble': 4, 'booking': datetime.date(2081, 11, 11)}
+
+2018-05-23 14:53:17,704 [INFO] Update request initiated.
+
+2018-05-23 14:53:17,764 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2081-11-11', 'singleroomaval': 3, 'doubleroomaval': 3}
+
+2018-05-23 14:53:21,519 [WARNING] Not Found: /favicon.ico
+
+2018-05-23 14:53:27,177 [INFO] Update request initiated.
+
+2018-05-23 14:53:27,227 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2081-11-11', 'singleroomaval': 1, 'doubleroomaval': 1}
+
+2018-05-23 14:56:15,070 [INFO] UPDATE request initiated.
+
+2018-05-23 14:56:15,172 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 10, 'pricedouble': 10, 'booking': datetime.date(2081, 11, 11)}
+
+2018-05-23 14:56:21,246 [WARNING] Not Found: /favicon.ico
+
+2018-05-23 14:56:27,602 [INFO] UPDATE request initiated.
+
+2018-05-23 14:56:27,665 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1, 'pricedouble': 1, 'booking': datetime.date(2081, 11, 11)}
+
+2018-05-23 14:56:37,139 [INFO] UPDATE request initiated.
+
+2018-05-23 14:56:37,144 [ERROR] {'booking': [ErrorDetail(string=u'Invalid pk "2081-11-12" - object does not exist.', code=u'does_not_exist')]}
+
+2018-05-23 14:57:09,895 [WARNING] Not Found: /updateroompricedata//
+
+2018-05-23 14:57:42,396 [WARNING] Not Found: /updateroompricedata//
+
+2018-05-23 15:07:54,333 [WARNING] Not Found: /updateroomdata//
+
+2018-05-23 15:18:14,773 [WARNING] Not Found: /updateroomdata//
+
+2018-05-23 15:19:29,699 [WARNING] Not Found: /updateroomdata//
+
+2018-05-23 15:20:37,088 [WARNING] Not Found: /updateroompricedata//
+
+2018-05-23 15:20:51,005 [WARNING] Not Found: /updateroompricedata//
+
+2018-05-23 15:21:01,594 [WARNING] Not Found: /updateroompricedata//
+
+2018-05-23 15:21:22,564 [INFO] UPDATE request initiated.
+
+2018-05-23 15:21:22,606 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 2, 'pricedouble': 2, 'booking': datetime.date(2081, 11, 11)}
+
+2018-05-23 15:21:28,479 [INFO] UPDATE request initiated.
+
+2018-05-23 15:21:28,487 [ERROR] Invalid price entered.
+
+2018-05-23 15:21:28,488 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-23 15:24:15,660 [INFO] UPDATE request initiated.
+
+2018-05-23 15:24:15,669 [ERROR] Invalid price entered.
+
+2018-05-23 15:24:15,669 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-23 15:25:00,453 [INFO] UPDATE request initiated.
+
+2018-05-23 15:25:00,463 [ERROR] Invalid price entered.
+
+2018-05-23 15:25:00,463 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-23 15:25:29,208 [INFO] UPDATE request initiated.
+
+2018-05-23 15:25:29,218 [ERROR] Invalid price entered.
+
+2018-05-23 15:25:29,219 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-23 15:25:45,665 [INFO] UPDATE request initiated.
+
+2018-05-23 15:25:45,677 [ERROR] Invalid price entered.
+
+2018-05-23 15:25:45,678 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-23 15:26:15,475 [INFO] UPDATE request initiated.
+
+2018-05-23 15:26:15,484 [ERROR] Invalid price entered.
+
+2018-05-23 15:26:15,484 [ERROR] {u'non_field_errors': [ErrorDetail(string=u'Invalid price entered.', code=u'invalid')]}
+
+2018-05-23 15:48:37,185 [INFO] Get request initiated.
+
+2018-05-23 15:48:37,188 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2081-11-11', 'singleroomaval': 1, 'doubleroomaval': 1}
+
+2018-05-23 15:48:54,897 [INFO] Get request initiated.
+
+2018-05-23 15:48:54,900 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2081-11-11', 'singleroomaval': 1, 'doubleroomaval': 1}
+
+2018-05-23 15:49:09,006 [INFO] Get request initiated.
+
+2018-05-23 15:49:09,009 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2081-11-11', 'singleroomaval': 1, 'doubleroomaval': 1}
+
+2018-05-23 15:54:57,044 [INFO] GET request initiated.
+
+2018-05-23 15:54:57,049 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 2, 'pricedouble': 2, 'booking': datetime.date(2081, 11, 11)}
+
+2018-05-23 15:54:57,054 [INFO] Get request initiated.
+
+2018-05-23 15:54:57,060 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2081-11-11', 'singleroomaval': 1, 'doubleroomaval': 1}
+
+2018-05-23 15:56:21,789 [INFO] Get request initiated.
+
+2018-05-23 15:56:21,793 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2081-11-11', 'singleroomaval': 1, 'doubleroomaval': 1}
+
+2018-05-23 15:56:21,801 [INFO] GET request initiated.
+
+2018-05-23 15:56:21,805 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 2, 'pricedouble': 2, 'booking': datetime.date(2081, 11, 11)}
+
+2018-05-23 15:56:32,082 [INFO] GET request initiated.
+
+2018-05-23 15:56:32,085 [INFO] Get request initiated.
+
+2018-05-23 15:56:32,087 [ERROR] No details found for given date
+
+2018-05-23 15:56:32,088 [ERROR] No details found for given date
+
+2018-05-23 15:56:55,550 [WARNING] Not Found: /favicon.ico
+
+2018-05-23 15:57:07,986 [INFO] Get request initiated.
+
+2018-05-23 15:57:07,994 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2032-10-10', 'singleroomaval': 4, 'doubleroomaval': 3}
+
+2018-05-23 15:57:08,004 [INFO] GET request initiated.
+
+2018-05-23 15:57:08,009 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1, 'pricedouble': 1199, 'booking': datetime.date(2032, 10, 10)}
+
+2018-05-23 15:58:36,233 [INFO] GET request initiated.
+
+2018-05-23 15:58:36,234 [INFO] Get request initiated.
+
+2018-05-23 15:58:36,240 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2032-10-10', 'singleroomaval': 4, 'doubleroomaval': 3}
+
+2018-05-23 15:58:36,243 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1, 'pricedouble': 1199, 'booking': datetime.date(2032, 10, 10)}
+
+2018-05-23 15:58:40,522 [INFO] Get request initiated.
+
+2018-05-23 15:58:40,538 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2032-10-09', 'singleroomaval': 4, 'doubleroomaval': 3}
+
+2018-05-23 15:58:40,549 [INFO] GET request initiated.
+
+2018-05-23 15:58:40,553 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 1, 'pricedouble': 1199, 'booking': datetime.date(2032, 10, 9)}
+
+2018-05-23 15:58:51,675 [INFO] Get request initiated.
+
+2018-05-23 15:58:51,682 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2081-11-11', 'singleroomaval': 1, 'doubleroomaval': 1}
+
+2018-05-23 15:58:51,686 [INFO] GET request initiated.
+
+2018-05-23 15:58:51,692 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 2, 'pricedouble': 2, 'booking': datetime.date(2081, 11, 11)}
+
+2018-05-23 16:01:13,276 [WARNING] Not Found: /updateroomdata//
+
+2018-05-23 16:01:47,667 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:01:48,989 [WARNING] Not Found: /updateroomdata//
+
+2018-05-23 16:01:59,084 [INFO] Update request initiated.
+
+2018-05-23 16:01:59,139 [INFO] Request completed
+Request status code: 200
+Data: {'date': '1000-10-10', 'singleroomaval': 5, 'doubleroomaval': 5}
+
+2018-05-23 16:02:15,659 [INFO] UPDATE request initiated.
+
+2018-05-23 16:02:15,754 [INFO] Request completed
+Request status code: 200
+Data: {'pricesingle': 0, 'pricedouble': 0, 'booking': datetime.date(1000, 10, 10)}
+
+2018-05-23 16:03:16,621 [WARNING] Not Found: /updateroompricedata//
+
+2018-05-23 16:03:58,790 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:03:59,842 [WARNING] Not Found: /updateroomdata//
+
+2018-05-23 16:04:13,037 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:04:14,766 [WARNING] Not Found: /updateroomdata//
+
+2018-05-23 16:04:34,819 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:04:35,469 [WARNING] Not Found: /updateroomdata//
+
+2018-05-23 16:05:22,439 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:05:24,945 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:05:29,395 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:06:05,931 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:06:07,563 [WARNING] Not Found: /updateroompricedata//
+
+2018-05-23 16:06:15,503 [WARNING] Not Found: /updateroompricedata//
+
+2018-05-23 16:06:17,211 [WARNING] Not Found: /updateroomdata//
+
+2018-05-23 16:06:46,316 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:06:48,000 [WARNING] Not Found: /updateroompricedata//
+
+2018-05-23 16:06:57,655 [INFO] Update request initiated.
+
+2018-05-23 16:06:57,707 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2082-10-10', 'singleroomaval': 3, 'doubleroomaval': 1}
+
+2018-05-23 16:07:09,907 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:07:28,308 [WARNING] Not Found: /updateroompricedata//
+
+2018-05-23 16:07:31,563 [INFO] Update request initiated.
+
+2018-05-23 16:07:31,615 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2083-11-10', 'singleroomaval': 4, 'doubleroomaval': 4}
+
+2018-05-23 16:08:36,318 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:08:37,377 [WARNING] Not Found: /updateroompricedata//
+
+2018-05-23 16:08:45,795 [INFO] Update request initiated.
+
+2018-05-23 16:08:45,841 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2000-10-10', 'singleroomaval': 2, 'doubleroomaval': 2}
+
+2018-05-23 16:09:19,837 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:09:20,648 [WARNING] Not Found: /updateroompricedata//
+
+2018-05-23 16:09:29,200 [INFO] Update request initiated.
+
+2018-05-23 16:09:29,252 [INFO] Request completed
+Request status code: 200
+Data: {'date': '2001-10-10', 'singleroomaval': 2, 'doubleroomaval': 2}
+
+2018-05-23 16:09:46,275 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:09:47,565 [WARNING] Not Found: /updateroompricedata//
+
+2018-05-23 16:09:52,788 [INFO] Update request initiated.
+
+2018-05-23 16:09:52,838 [INFO] Request completed
+Request status code: 200
+Data: {'date': '1999-10-10', 'singleroomaval': 5, 'doubleroomaval': 5}
+
+2018-05-23 16:11:49,267 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:12:01,723 [INFO] Get request initiated.
+
+2018-05-23 16:12:01,732 [INFO] GET request initiated.
+
+2018-05-23 16:12:01,734 [ERROR] No details found for given date
+
+2018-05-23 16:12:01,736 [ERROR] No details found for given date
+
+2018-05-23 16:12:11,027 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:12:15,472 [INFO] Get request initiated.
+
+2018-05-23 16:12:15,475 [ERROR] No details found for given date
+
+2018-05-23 16:12:15,485 [INFO] GET request initiated.
+
+2018-05-23 16:12:15,487 [ERROR] No details found for given date
+
+2018-05-23 16:13:20,588 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:13:23,798 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:13:37,347 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:14:36,081 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:14:40,150 [INFO] BULK operation initiated.
+
+2018-05-23 16:14:40,151 [ERROR] Incomplete payload.
+
+2018-05-23 16:14:48,177 [INFO] BULK operation initiated.
+
+2018-05-23 16:14:48,178 [ERROR] Incomplete payload.
+
+2018-05-23 16:15:12,773 [WARNING] Not Found: /static/img/favicon.png
+
+2018-05-23 16:15:13,008 [INFO] BULK operation initiated.
+
+2018-05-23 16:15:13,009 [ERROR] Incomplete payload.
+
+2018-05-23 16:15:19,176 [INFO] BULK operation initiated.
+
+2018-05-23 16:15:19,177 [ERROR] Incomplete payload.
+
+2018-05-23 16:15:26,659 [INFO] BULK operation initiated.
+
+2018-05-23 16:15:26,660 [ERROR] Incomplete payload.
+
+2018-05-23 16:17:22,849 [INFO] BULK operation initiated.
+
+2018-05-23 16:17:22,850 [ERROR] Incomplete payload.
+
+2018-05-23 16:19:02,099 [INFO] BULK operation initiated.
+
+2018-05-23 16:19:02,100 [ERROR] Incomplete payload.
+
+2018-05-23 16:20:29,170 [INFO] BULK operation initiated.
+
+2018-05-23 16:20:29,171 [ERROR] Incomplete payload.
+
+2018-05-23 16:20:30,294 [INFO] BULK operation initiated.
+
+2018-05-23 16:20:30,295 [ERROR] Incomplete payload.
+
+2018-05-23 16:21:14,883 [INFO] BULK operation initiated.
+
+2018-05-23 16:21:14,883 [ERROR] Incomplete payload.
+
