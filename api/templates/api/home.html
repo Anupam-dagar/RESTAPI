@@ -170,7 +170,8 @@
                 </tr>
             </table>
         </div>
-        <div id="checkerror"></div>
+        <div id="checkerrorroom"></div>
+        <div id="checkerrorprice"></div>        
     </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -272,12 +273,15 @@
             url: "/getroomdata/" + date + "/",
             datatype: 'json',
             success: function (data) {
+                $('#checkerrorroom').empty();
                 $('#requestdate').html(data.date);
                 $('#singleavail').html(data.singleroomaval);
                 $('#doubleavail').html(data.doubleroomaval);
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
-                $('#checkerror').html("<h2>No room data found</h2>")
+                $('#singleavail').empty();
+                $('#doubleavail').empty();
+                $('#checkerrorroom').html("<h2>No room data found</h2>")
             }
         });
 
@@ -286,10 +290,14 @@
             url: "/getroompricedata/" + date + "/",
             datatype: 'json',
             success: function (data) {
+                $('#checkerrorprice').empty();
                 $('#singlepr').html(data.pricesingle);
                 $('#doublepr').html(data.pricedouble);
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $('#singlepr').empty();
+                $('#doublepr').empty();
+                $('#checkerrorprice').html("<h2>No room price data found</h2>")
             }
         });
     });
