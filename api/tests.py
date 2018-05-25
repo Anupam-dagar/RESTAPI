@@ -63,7 +63,7 @@ class BookingApiTestCase(TestCase):
         }
 
     def test_get_single_booking(self):
-        response = client.get(reverse('GetBooking', kwargs={
+        response = client.get(reverse('Booking', kwargs={
             'datebooking': '2018-05-20'}))
         response_dict = {
             'date': '2018-05-20',
@@ -74,12 +74,12 @@ class BookingApiTestCase(TestCase):
         self.assertEqual(response.data, response_dict)
 
     def test_valid_payload(self):
-        response = client.put(reverse('UpdateBooking', kwargs={
+        response = client.put(reverse('Booking', kwargs={
             'datebooking': '2018-04-18'}), data=json.dumps(self.valid_payload), content_type='application/json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_edit_payload(self):
-        response = client.put(reverse('UpdateBooking', kwargs={
+        response = client.put(reverse('Booking', kwargs={
             'datebooking': '2018-05-20'}), data=json.dumps(self.edit_payload), content_type='application/json')
         response_dict = {
             "date": "2018-05-20",
@@ -90,7 +90,7 @@ class BookingApiTestCase(TestCase):
         self.assertEqual(response.data, response_dict)
 
     def test_date_invalid_edit_payload(self):
-        response = client.put(reverse('UpdateBooking', kwargs={
+        response = client.put(reverse('Booking', kwargs={
             'datebooking': '20-05-2018'}), data=json.dumps(self.date_invalid_edit_payload), content_type='application/json')
         response_dict = {
             "date": [
@@ -101,7 +101,7 @@ class BookingApiTestCase(TestCase):
         self.assertEqual(response.data, response_dict)
 
     def test_single_aval_invalid_edit_payload(self):
-        response = client.put(reverse('UpdateBooking', kwargs={
+        response = client.put(reverse('Booking', kwargs={
             'datebooking': '2018-05-20'}), data=json.dumps(self.single_aval_invalid_edit_payload), content_type='application/json')
         response_dict = {
             "non_field_errors": [
@@ -112,7 +112,7 @@ class BookingApiTestCase(TestCase):
         self.assertEqual(response.data, response_dict)
 
     def test_single_aval_neg_invalid_edit_payload(self):
-        response = client.put(reverse('UpdateBooking', kwargs={
+        response = client.put(reverse('Booking', kwargs={
             'datebooking': '2018-05-20'}), data=json.dumps(self.single_aval_neg_invalid_edit_payload), content_type='application/json')
         response_dict = {
             "non_field_errors": [
@@ -123,7 +123,7 @@ class BookingApiTestCase(TestCase):
         self.assertEqual(response.data, response_dict)
 
     def test_double_aval_invalid_edit_payload(self):
-        response = client.put(reverse('UpdateBooking', kwargs={
+        response = client.put(reverse('Booking', kwargs={
             'datebooking': '2018-05-20'}), data=json.dumps(self.double_aval_invalid_edit_payload), content_type='application/json')
         response_dict = {
             "non_field_errors": [
@@ -134,7 +134,7 @@ class BookingApiTestCase(TestCase):
         self.assertEqual(response.data, response_dict)
 
     def test_double_aval_neg_invalid_edit_payload(self):
-        response = client.put(reverse('UpdateBooking', kwargs={
+        response = client.put(reverse('Booking', kwargs={
             'datebooking': '2018-05-20'}), data=json.dumps(self.double_aval_neg_invalid_edit_payload), content_type='application/json')
         response_dict = {
             "non_field_errors": [
@@ -145,7 +145,7 @@ class BookingApiTestCase(TestCase):
         self.assertEqual(response.data, response_dict)
 
     def test_partialupdate_edit_payload(self):
-        response = client.put(reverse('UpdateBooking', kwargs={
+        response = client.put(reverse('Booking', kwargs={
             'datebooking': '2018-05-20'}), data=json.dumps(self.partialupdate_edit_payload), content_type='application/json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
@@ -180,31 +180,31 @@ class PriceApiTestCase(TestCase):
 
     def test_get_single_price(self):
         response = client.get(
-            reverse('GetPrice', kwargs={'datebooking': '2018-05-20'}))
+            reverse('Price', kwargs={'datebooking': '2018-05-20'}))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_valid_payload(self):
-        response = client.put(reverse('UpdatePrice', kwargs={
+        response = client.put(reverse('Price', kwargs={
             "datebooking": "2018-05-19"}), data=json.dumps(self.valid_payload), content_type='application/json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_date_invalid_payload(self):
-        response = client.put(reverse('UpdatePrice', kwargs={
+        response = client.put(reverse('Price', kwargs={
             "datebooking": "12-05-2018"}), data = json.dumps(self.date_invalid_payload), content_type='application/json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
     def test_edit_payload(self):
-        response=client.put(reverse('UpdatePrice', kwargs={
+        response=client.put(reverse('Price', kwargs={
             "datebooking": "2018-05-20"}), data = json.dumps(self.edit_payload), content_type = 'application/json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_pricesingle_invalid_edit_payload(self):
-        response=client.put(reverse('UpdatePrice', kwargs={
+        response=client.put(reverse('Price', kwargs={
             'datebooking': '2018-05-20'}), data = json.dumps(self.pricesingle_invalid_edit_payload), content_type = 'application/json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
     def test_pricedouble_invalid_edit_payload(self):
-        response=client.put(reverse('UpdatePrice', kwargs={
+        response=client.put(reverse('Price', kwargs={
             'datebooking': '2018-05-20'}), data = json.dumps(self.pricedouble_invalid_edit_payload), content_type = 'application/json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
