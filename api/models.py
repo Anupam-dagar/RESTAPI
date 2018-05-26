@@ -15,8 +15,8 @@ class Booking(models.Model):
 class Price(models.Model):
     version = IntegerVersionField()
     booking = models.OneToOneField(Booking, on_delete=models.CASCADE, primary_key=True)
-    pricesingle = models.IntegerField(default=0)
-    pricedouble = models.IntegerField(default=0)
+    pricesingle = models.DecimalField(max_digits=7, decimal_places=2, default=0)
+    pricedouble = models.DecimalField(max_digits=7, decimal_places=2, default=0)
 
     def __str__(self):
         return str(self.booking.date)

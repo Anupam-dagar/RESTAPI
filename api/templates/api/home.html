@@ -203,7 +203,7 @@
         });
         $.ajax({
             type: "PUT",
-            url: "/bulk/",
+            url: "/api/bulk/",
             data: data,
             beforeSend: function(){
                 $('#progressbar').html("<h3>Please wait while the request gets completed.</h3>");
@@ -215,9 +215,7 @@
                 alert("Bulk operation successfully completed.");
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
-                var errorstring = XMLHttpRequest.responseText.split(':')[1].split(',')[0];
-                var error = errorstring.substring(1,errorstring.length-1);
-                $('#bulkerror').html(String(errorThrown) + "<br>" + String(textStatus) + '<br>' + String(error));
+                $('#bulkerror').html(String(errorThrown) + "<br>" + String(textStatus) + '<br>Either form data is incomplete or price has more than 2 decimal digits.');
             }
         });
     });
@@ -236,7 +234,7 @@
         });
         $.ajax({
             type: "PUT",
-            url: "/room/" + date + "/",
+            url: "/api/room/" + date + "/",
             data: data,
             success: function () {
                 alert("Room data updated.");
@@ -261,13 +259,13 @@
         });
         $.ajax({
             type: "PUT",
-            url: "/price/" + date + "/",
+            url: "/api/price/" + date + "/",
             data: data,
             success: function () {
                 alert("Room price updated.");
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
-                $('#singleoperror').html("<h2>No Date Entered</h2>")
+                $('#singleoperror').html("<h2>No Date Entered or decimal digits more than 2</h2>")
             }
         });
     });
@@ -277,7 +275,7 @@
         event.preventDefault();
         $.ajax({
             type: "GET",
-            url: "/room/" + date + "/",
+            url: "/api/room/" + date + "/",
             datatype: 'json',
             success: function (data) {
                 $('#checkerrorroom').empty();
@@ -294,7 +292,7 @@
 
         $.ajax({
             type: "GET",
-            url: "/price/" + date + "/",
+            url: "/api/price/" + date + "/",
             datatype: 'json',
             success: function (data) {
                 $('#checkerrorprice').empty();

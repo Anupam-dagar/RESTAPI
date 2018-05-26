@@ -16,13 +16,6 @@ if [ ! -f "$BASEDIR/env/updated" -o $BASEDIR/requirements.txt -nt $BASEDIR/env/u
     echo "Requirements installed."
 fi
 
-migrations=$(python manage.py showmigrations | grep '\[ \]\|^[a-z]' | grep '[  ]' -B 1 | wc -l)
-
-if [ $migrations -ne 0 ]; then
-    echo "Running migrations"
-    python3 manage.py makemigrations
-    python3 manage.py migrate
-    echo "Migrations completed."
-fi
-
+python3 manage.py makemigrations
+python3 manage.py migrate
 python3 manage.py runserver
