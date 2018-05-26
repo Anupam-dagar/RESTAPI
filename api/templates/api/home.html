@@ -95,6 +95,7 @@
             </div>
         </form>
         <div id="bulkerror"></div>
+        <div id="progressbar"></div>
     </div>
     <div class="jumbotron container-fluid">
         <h3>Single date operation</h3>
@@ -204,6 +205,12 @@
             type: "PUT",
             url: "/bulk/",
             data: data,
+            beforeSend: function(){
+                $('#progressbar').html("<h3>Please wait while the request gets completed.</h3>");
+            },
+            complete: function(){
+                $('#progressbar').empty();
+            },
             success: function () {
                 alert("Bulk operation successfully completed.");
             },
