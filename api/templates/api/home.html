@@ -133,7 +133,8 @@
                 </div>
                 <button type="submit" class="btn btn-success" id="updateprice">Update Price</button>
             </div>
-        </form><br>
+        </form>
+        <br>
         <div id="singleoperror"></div>
     </div>
     <div class="jumbotron container-fluid">
@@ -172,7 +173,7 @@
             </table>
         </div>
         <div id="checkerrorroom"></div>
-        <div id="checkerrorprice"></div>        
+        <div id="checkerrorprice"></div>
     </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -205,17 +206,18 @@
             type: "PUT",
             url: "/api/bulk/",
             data: data,
-            beforeSend: function(){
+            beforeSend: function () {
                 $('#progressbar').html("<h3>Please wait while the request gets completed.</h3>");
             },
-            complete: function(){
+            complete: function () {
                 $('#progressbar').empty();
             },
             success: function () {
                 alert("Bulk operation successfully completed.");
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
-                $('#bulkerror').html(String(errorThrown) + "<br>" + String(textStatus) + '<br>Either form data is incomplete or price has more than 2 decimal digits.');
+                var error = XMLHttpRequest.responseJSON;
+                $('#bulkerror').html(String(errorThrown) + "<br>" + String(textStatus) + '<br>' + error.message);
             }
         });
     });
@@ -265,7 +267,19 @@
                 alert("Room price updated.");
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
-                $('#singleoperror').html("<h2>No Date Entered or decimal digits more than 2</h2>")
+                var error = XMLHttpRequest.responseJSON;
+                console.log(error);
+                if (error == null) {
+                    $('#singleoperror').html("<h2>No Date Entered</h2>");
+                }
+                else {
+                    if (typeof error.pricesingle !== "undefined" || typeof error.pricedouble !== "undefined"){
+                        $('#singleoperror').append(error.pricesingle);
+                    }
+                    if (typeof error.pricedouble !== "undefined"){
+                        $('#singleoperror').append(error.pricedouble);
+                    }
+                }
             }
         });
     });
@@ -306,5 +320,4 @@
             }
         });
     });
-</script>
-{% endblock content %}
+</script> {% endblock content %}

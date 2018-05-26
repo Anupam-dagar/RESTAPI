@@ -89,9 +89,14 @@ class BulkOperationsApi(APIView):
         except ValueError:
             logging.error('Wrong date format.')
             return Response({'success': False, 'message': 'Please enter date in YYYY-MM-DD format.'}, status=status.HTTP_400_BAD_REQUEST)
-        
+        if from_date > to_date:
+            return Response({"success": False, "message": "'From date' must be before 'to date'."}, status=status.HTTP_400_BAD_REQUEST)
         delta = datetime.timedelta(days=1)
-
+        try:
+            if len(price.encode('utf-8').split('.')[1]) > 2:
+                return Response({"success": False, "message": "Decimal digits in price should be less than or equals 2."}, status=status.HTTP_400_BAD_REQUEST)
+        except IndexError:
+            pass
         post_booking = {}
         post_price = {}
         while from_date <= to_date:

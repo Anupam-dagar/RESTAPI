@@ -39,7 +39,8 @@ payload = {
     "pricedouble": integer_value
 }
 ```
-default for both fields is 0.
+both fields are decimal field with upto 2 decimal places. More than 2 decimal places will result in an error. Both should be non negative.  
+default for both fields is 0.00
 
 3. To get the details of a room on a given date:  
 url: `/api/room/date-of-booking/`  
@@ -65,5 +66,7 @@ payload = {
 }
 ```  
 `days` is an array with numbers from 1-7 with each number representing the respective day of the week.  
-For example monday and tuesday will be sent as `[1,2]`.
-`room_type` is a string with value either `single` or `double`.
+For example monday and tuesday will be sent as `[1,2]`.  
+`room_type` is a string with value either `single` or `double`.  
+`price` is a decimal field with upto 2 decimal places. More than 2 decimal places will result in an error. Price should be non negative.  
+`availability` must be between 0 to 5 only.
