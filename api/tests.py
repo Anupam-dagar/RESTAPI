@@ -190,33 +190,33 @@ class PriceApiTestCase(TestCase):
 
     def test_date_invalid_payload(self):
         response = client.put(reverse('Price', kwargs={
-            "datebooking": "12-05-2018"}), data = json.dumps(self.date_invalid_payload), content_type='application/json')
+            "datebooking": "12-05-2018"}), data=json.dumps(self.date_invalid_payload), content_type='application/json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
     def test_edit_payload(self):
-        response=client.put(reverse('Price', kwargs={
-            "datebooking": "2018-05-20"}), data = json.dumps(self.edit_payload), content_type = 'application/json')
+        response = client.put(reverse('Price', kwargs={
+            "datebooking": "2018-05-20"}), data=json.dumps(self.edit_payload), content_type='application/json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_pricesingle_invalid_edit_payload(self):
-        response=client.put(reverse('Price', kwargs={
-            'datebooking': '2018-05-20'}), data = json.dumps(self.pricesingle_invalid_edit_payload), content_type = 'application/json')
+        response = client.put(reverse('Price', kwargs={
+            'datebooking': '2018-05-20'}), data=json.dumps(self.pricesingle_invalid_edit_payload), content_type='application/json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
     def test_pricedouble_invalid_edit_payload(self):
-        response=client.put(reverse('Price', kwargs={
-            'datebooking': '2018-05-20'}), data = json.dumps(self.pricedouble_invalid_edit_payload), content_type = 'application/json')
+        response = client.put(reverse('Price', kwargs={
+            'datebooking': '2018-05-20'}), data=json.dumps(self.pricedouble_invalid_edit_payload), content_type='application/json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
 
 class BulkOperationTest(TestCase):
     def setUp(self):
-        self.double_valid_payload={
+        self.double_valid_payload = {
             "from_date": "2015-10-10",
             "to_date": "2016-10-10",
             "days": ["1", "2", "3", "4", "5", "6", "7"],
             "room_type": "double",
-            "price": 1199,
+            "price": "1199",
             "availability": 3
         }
         self.single_valid_payload = {
@@ -224,7 +224,7 @@ class BulkOperationTest(TestCase):
             "to_date": "2016-10-10",
             "days": ["1", "2", "3", "4", "5", "6", "7"],
             "room_type": "single",
-            "price": 1199,
+            "price": "1199",
             "availability": 3
         }
         self.from_date_invalid_payload = {
@@ -232,7 +232,7 @@ class BulkOperationTest(TestCase):
             "to_date": "2016-10-10",
             "days": ["1", "2", "3", "4", "5", "6", "7"],
             "room_type": "single",
-            "price": 1199,
+            "price": "1199",
             "availability": 3
         }
         self.to_date_invalid_payload = {
@@ -240,7 +240,7 @@ class BulkOperationTest(TestCase):
             "to_date": "10-10-2016",
             "days": ["1", "2", "3", "4", "5", "6", "7"],
             "room_type": "single",
-            "price": 1199,
+            "price": "1199",
             "availability": 3
         }
         self.price_invalid_payload = {
@@ -256,7 +256,7 @@ class BulkOperationTest(TestCase):
             "to_date": "10-10-2016",
             "days": ["1", "2", "3", "4", "5", "6", "7"],
             "room_type": "single",
-            "price": 1199,
+            "price": "1199",
             "availability": 6
         }
         self.aval_neg_invalid_payload = {
@@ -264,8 +264,16 @@ class BulkOperationTest(TestCase):
             "to_date": "10-10-2016",
             "days": ["1", "2", "3", "4", "5", "6", "7"],
             "room_type": "single",
-            "price": 1199,
+            "price": "1199",
             "availability": -1
+        }
+        self.invalid_date_range_payload = {
+            "from_date": "2016-10-10",
+            "to_date": "2015-10-10",
+            "days": ["1", "2", "3", "4", "5", "6", "7"],
+            "room_type": "single",
+            "price": "1199",
+            "availability": 3
         }
 
     def test_double_valid_payload(self):
@@ -301,6 +309,11 @@ class BulkOperationTest(TestCase):
     def test_aval_neg_invalid_payload(self):
         response = client.put(reverse('BulkOperation'), data=json.dumps(
             self.aval_neg_invalid_payload), content_type='application/json')
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+    def test_invalid_date_range_payload(self):
+        response = client.put(reverse('BulkOperation'), data=json.dumps(
+            self.invalid_date_range_payload), content_type='application/json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
 

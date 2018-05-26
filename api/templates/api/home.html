@@ -190,6 +190,7 @@
         $("input[name='days']:checked").each(function () {
             days.push(this.value);
         });
+        price = parseFloat(price);
         var data = {};
         data["from_date"] = from_date;
         data["to_date"] = to_date;
