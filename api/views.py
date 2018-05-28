@@ -28,12 +28,12 @@ class BookingApi(APIView):
         logger.info('Update request initiated.')
         request_data = request.data.copy()
         request_data['date'] = datebooking
-        singleroomaval = request_data.get('singleroomaval',None)
-        doubleroomaval = request_data.get('doubleroomaval',None)
-        if singleroomaval is not None:
+        singleroomaval = request_data.get('singleroomaval','')
+        doubleroomaval = request_data.get('doubleroomaval','')
+        if singleroomaval != '':
             if int(singleroomaval) > 5 or int(singleroomaval) < 0:
                 return Response({"success": False,"message": "Availability must be between 0 and 5."}, status=status.HTTP_400_BAD_REQUEST)
-        if doubleroomaval is not None:
+        if doubleroomaval != '':
             if int(doubleroomaval) > 5 or int(doubleroomaval) < 0:
                 return Response({"success": False,"message": "Availability must be between 0 and 5."}, status=status.HTTP_400_BAD_REQUEST)                
         try:
