@@ -287,6 +287,7 @@
                     if (typeof error.pricedouble !== "undefined"){
                         $('#singleoperror').append(error.pricedouble);
                     }
+                    $('#singleoperror').html(error.message);
                 }
             }
         });

@@ -65,6 +65,14 @@ class PriceApi(APIView):
         logger.info('UPDATE request initiated.')
         request_data = request.data.copy()
         request_data['booking'] = datebooking
+        singleprice = request_data.get('pricesingle', '')
+        doubleprice = request_data.get('pricedouble', '')
+        if singleprice != '':
+            if int(singleprice) < 0:
+                return Response({"success": False,"message": "Price should be non negative"}, status=status.HTTP_400_BAD_REQUEST)
+        if doubleprice != '':
+            if int(doubleprice) < 0:
+                return Response({"success": False,"message": "Price should be non negative"}, status=status.HTTP_400_BAD_REQUEST)                            
         try:
             price = Price.objects.get(booking__date=datebooking)
             pserializer = PriceSerializer(price, data=request_data, partial=True)
