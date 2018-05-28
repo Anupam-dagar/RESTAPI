@@ -242,7 +242,14 @@
                 alert("Room data updated.");
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
-                $('#singleoperror').html("<h2>No Date Entered</h2>")
+                var error = XMLHttpRequest.responseJSON;
+                console.log(error);
+                if (error == null) {
+                    $('#singleoperror').html("<h2>No Date Entered</h2>");
+                }
+                else {
+                    $('#singleoperror').html(String(errorThrown) + "<br>" + String(textStatus) + '<br>' + error.message);
+                }
             }
         });
     });
