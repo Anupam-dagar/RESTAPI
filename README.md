@@ -22,12 +22,12 @@ where date of booking should be in the YYYY-MM-DD format.
 Request Type: `PUT`  
 ```json
 payload = {
-    "singleroomaval": integer_value,
-    "doubleroomaval": integer_value
+    "singleroomaval": integer_string,
+    "doubleroomaval": integer_string
 }
 ```
 default for both fields is 5.
-integer_value should be between 0 and 5.
+integer_string should be between 0 and 5.
 
 2. To update the details of room price on a given date:  
 url: `/api/price/date-of-booking/`  
@@ -35,8 +35,8 @@ where date of booking should be in the YYYY-MM-DD format.
 Request Type: `PUT`  
 ```json
 payload = {
-    "pricesingle": integer_value,
-    "pricedouble": integer_value
+    "pricesingle": integer_string,
+    "pricedouble": integer_string
 }
 ```
 both fields are decimal field with upto 2 decimal places. More than 2 decimal places will result in an error. Both should be non negative.  
@@ -61,8 +61,8 @@ payload = {
     "to_date": YYYY-MM-DD,
     "days": [1-7],
     "room_type": single or double,
-    "price": integer_value,
-    "availability": 0-5
+    "price": integer_string,
+    "availability": integer_string
 }
 ```  
 `days` is an array with numbers from 1-7 with each number representing the respective day of the week.  
