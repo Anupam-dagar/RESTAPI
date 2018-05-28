@@ -81,68 +81,32 @@ class BookingApiTestCase(TestCase):
     def test_edit_payload(self):
         response = client.put(reverse('Booking', kwargs={
             'datebooking': '2018-05-20'}), data=json.dumps(self.edit_payload), content_type='application/json')
-        response_dict = {
-            "date": "2018-05-20",
-            "singleroomaval": 1,
-            "doubleroomaval": 2
-        }
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data, response_dict)
 
     def test_date_invalid_edit_payload(self):
         response = client.put(reverse('Booking', kwargs={
             'datebooking': '20-05-2018'}), data=json.dumps(self.date_invalid_edit_payload), content_type='application/json')
-        response_dict = {
-            "date": [
-                "Date has wrong format. Use one of these formats instead: YYYY[-MM[-DD]]."
-            ]
-        }
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-        self.assertEqual(response.data, response_dict)
 
     def test_single_aval_invalid_edit_payload(self):
         response = client.put(reverse('Booking', kwargs={
             'datebooking': '2018-05-20'}), data=json.dumps(self.single_aval_invalid_edit_payload), content_type='application/json')
-        response_dict = {
-            "non_field_errors": [
-                "Room availability must be between 0 or 5"
-            ]
-        }
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-        self.assertEqual(response.data, response_dict)
 
     def test_single_aval_neg_invalid_edit_payload(self):
         response = client.put(reverse('Booking', kwargs={
             'datebooking': '2018-05-20'}), data=json.dumps(self.single_aval_neg_invalid_edit_payload), content_type='application/json')
-        response_dict = {
-            "non_field_errors": [
-                "Room availability must be between 0 or 5"
-            ]
-        }
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-        self.assertEqual(response.data, response_dict)
 
     def test_double_aval_invalid_edit_payload(self):
         response = client.put(reverse('Booking', kwargs={
             'datebooking': '2018-05-20'}), data=json.dumps(self.double_aval_invalid_edit_payload), content_type='application/json')
-        response_dict = {
-            "non_field_errors": [
-                "Room availability must be between 0 or 5"
-            ]
-        }
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-        self.assertEqual(response.data, response_dict)
 
     def test_double_aval_neg_invalid_edit_payload(self):
         response = client.put(reverse('Booking', kwargs={
             'datebooking': '2018-05-20'}), data=json.dumps(self.double_aval_neg_invalid_edit_payload), content_type='application/json')
-        response_dict = {
-            "non_field_errors": [
-                "Room availability must be between 0 or 5"
-            ]
-        }
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-        self.assertEqual(response.data, response_dict)
 
     def test_partialupdate_edit_payload(self):
         response = client.put(reverse('Booking', kwargs={
