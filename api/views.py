@@ -28,6 +28,14 @@ class BookingApi(APIView):
         logger.info('Update request initiated.')
         request_data = request.data.copy()
         request_data['date'] = datebooking
+        singleroomaval = request_data.get('singleroomaval',None)
+        doubleroomaval = request_data.get('doubleroomaval',None)
+        if singleroomaval is not None:
+            if singleroomaval > 5 or singleroomaval < 0:
+                return Response({"success": False,"message": "Availability must be between 0 and 5."}, status=status.HTTP_400_BAD_REQUEST)
+        if doubleroomaval is not None:
+            if doubleroomaval > 5 or doubleroomaval < 0:
+                return Response({"success": False,"message": "Availability must be between 0 and 5."}, status=status.HTTP_400_BAD_REQUEST)                
         try:
             booking = Booking.objects.get(date=datebooking)
             bserializer = BookingSerializer(booking, data=request_data, partial=True)
@@ -97,6 +105,8 @@ class BulkOperationsApi(APIView):
                 return Response({"success": False, "message": "Decimal digits in price should be less than or equals 2."}, status=status.HTTP_400_BAD_REQUEST)
         except IndexError:
             pass
+        if availability > 5 or availability < 0:
+            return Response({"success": False,"message": "Availability must be between 0 and 5."}, status=status.HTTP_400_BAD_REQUEST)
         post_booking = {}
         post_price = {}
         while from_date <= to_date:
