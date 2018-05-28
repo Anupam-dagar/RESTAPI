@@ -93,7 +93,7 @@ class BulkOperationsApi(APIView):
             return Response({"success": False, "message": "'From date' must be before 'to date'."}, status=status.HTTP_400_BAD_REQUEST)
         delta = datetime.timedelta(days=1)
         try:
-            if len(price.encode('utf-8').split('.')[1]) > 2:
+            if len(price.split('.')[1]) > 2:
                 return Response({"success": False, "message": "Decimal digits in price should be less than or equals 2."}, status=status.HTTP_400_BAD_REQUEST)
         except IndexError:
             pass

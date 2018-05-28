@@ -298,6 +298,7 @@
                 $('#doubleavail').html(data.doubleroomaval);
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $('#requestdate').empty();
                 $('#singleavail').empty();
                 $('#doubleavail').empty();
                 $('#checkerrorroom').html("<h2>No room data found</h2>")
@@ -310,10 +311,12 @@
             datatype: 'json',
             success: function (data) {
                 $('#checkerrorprice').empty();
+                $('#requestdate').html(data.date);                
                 $('#singlepr').html(data.pricesingle);
                 $('#doublepr').html(data.pricedouble);
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $('#requestdate').empty();                
                 $('#singlepr').empty();
                 $('#doublepr').empty();
                 $('#checkerrorprice').html("<h2>No room price data found</h2>")
